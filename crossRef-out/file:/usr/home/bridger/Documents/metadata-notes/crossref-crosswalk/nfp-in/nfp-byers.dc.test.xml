@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_batch xmlns="http://www.crossref.org/schema/4.3.3"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           version="4.3.3"
+           xsi:schemaLocation="http://www.crossref.org/schema/4.3.3 http://www.crossref.org/schemas/crossref4.3.3.xsd">
+   <head>
+      <doi_batch_id>10.5072/FK2</doi_batch_id>
+      <timestamp>20141023</timestamp>
+      <depositor>
+         <name>file:/usr/home/bridger/Documents/metadata-notes/crossref-crosswalk/nfp-in/nfp-byers.dc</name>
+         <email_address>bdysonsm@utk.edu</email_address>
+      </depositor>
+      <registrant>The University of Tennessee Libraries</registrant>
+   </head>
+   <body>
+      <book>HI!</book>
+   </body>
+</doi_batch>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_batch version="4.3.3" 
+  xmlns="http://www.crossref.org/schema/4.3.3" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://www.crossref.org/schema/4.3.3 http://www.crossref.org/schemas/crossref4.3.3.xsd">
+  <head>
+    <doi_batch_id>10.5072/FK2</doi_batch_id>
+    <timestamp>20141023</timestamp>
+    <depositor>
+      <name>Bridger Dyson-Smith</name>
+      <email_address>bdysonsm@utk.edu</email_address>
+    </depositor>
+    <registrant>University of Tennessee</registrant>
+  </head>
+  <body>
+    <book book_type="edited_book">
+      <book_metadata language="en">
+        <contributors>
+          <person_name sequence="first" contributor_role="author">
+            <given_name>First Name and Initial</given_name>
+            <surname>Last Name</surname>
+          </person_name>
+        </contributors>
+        <titles>
+          <title>Target Title</title>
+        </titles>
+        <publication_date media_type="online">
+          <year>2014</year>
+        </publication_date>
+        <isbn media_type="electronic">0123456789</isbn>
+        <publisher>
+          <publisher_name>The University of Tennessee Libraries, New Found Press</publisher_name>
+          <publisher_place>Knoxville, TN</publisher_place>
+        </publisher>
+      </book_metadata>
+    </book>
+  </body>
+</doi_batch>
