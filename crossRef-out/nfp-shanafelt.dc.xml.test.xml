@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_batch xmlns="http://www.crossref.org/schema/4.3.3"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           version="4.3.3"
+           xsi:schemaLocation="http://www.crossref.org/schema/4.3.3 http://www.crossref.org/schemas/crossref4.3.3.xsd">
+   <head>
+      <doi_batch_id>10.5072/FK2</doi_batch_id>
+      <timestamp>20141026</timestamp>
+      <depositor>
+         <name>Bridger Dyson-Smith</name>
+         <email_address>bdysonsm@utk.edu</email_address>
+      </depositor>
+      <registrant>University of Tennessee</registrant>
+      <body>
+         <book>Building bridges in anthropology [electronic resource] : understanding, acting, teaching, and theorizing /Shanafelt, Robert,Southern Anthropological Society.c2012.DOI:10.7290/V7RN35S4
+      Building bridges in anthropology [electronic resource] : understanding, acting, teaching, and theorizing /
+      Shanafelt, Robert,
+      Southern Anthropological Society.
+      text
+      Electronic books.
+      Knoxville, Tenn. : Newfound Press, University of Tennessee Libraries,
+      c2012.
+      eng
+      "Selected papers from the Annual Meeting of the Southern Anthropological Society titled [Ports, Hubs and Bridges: Key Links in Anthropological Theory and Practice held in] Savannah, GA, Feb. 2010." -- t.p.
+      Title from PDF title page (Newfound Press Web site, viewed on Apr. 4, 2012).
+      "Southern Anthropological Society" -- t.p. verso.
+      Includes bibliographical references.
+      "Selected papers from the Annual Meeting of the Southern Anthropological Society titled [Ports, Hubs and Bridges: Key Links in Anthropological Theory and Practice held in] Savannah, GA, Feb. 2010." -- t.p.
+      Ethnology
+      Anthropology
+      Ethnology
+      Also available print-on-demand at publisher's website.
+      http://www.newfoundpress.utk.edu/pubs/bridges/
+      http://utpress.org/bookdetail-2/?jobno=T01698
+      URN:ISBN:0984644539 (electronic bk.) -- Canceled or invalid ISBN
+      URN:ISBN:9780984644537 (electronic bk.) -- Canceled or invalid ISBN
+      DOI:10.7290/V7RN35S4
+   </book>
+      </body>
+   </head>
+</doi_batch>

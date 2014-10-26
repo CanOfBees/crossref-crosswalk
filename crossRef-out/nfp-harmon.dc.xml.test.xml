@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_batch xmlns="http://www.crossref.org/schema/4.3.3"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           version="4.3.3"
+           xsi:schemaLocation="http://www.crossref.org/schema/4.3.3 http://www.crossref.org/schemas/crossref4.3.3.xsd">
+   <head>
+      <doi_batch_id>10.5072/FK2</doi_batch_id>
+      <timestamp>20141026</timestamp>
+      <depositor>
+         <name>Bridger Dyson-Smith</name>
+         <email_address>bdysonsm@utk.edu</email_address>
+      </depositor>
+      <registrant>University of Tennessee</registrant>
+      <body>
+         <book>Found, featured, then forgotten [electronic resource] : U.S. network tv news and the Vietnam Veterans Against the War /Harmon, Mark D.c2011.DOI:10.7290/V7G44N61
+      Found, featured, then forgotten [electronic resource] : U.S. network tv news and the Vietnam Veterans Against the War /
+      Harmon, Mark D.
+      text
+      Electronic books.
+      Knoxville, Tenn. : Newfound Press, University of Tennessee Libraries,
+      c2011.
+      eng
+      "Found, Featured, then Forgotten examines that news coverage, focusing on how U.S. television news organizations treated a very significant antiwar group, the Vietnam Veterans Against the War (VVAW). This book is not a history of the VVAW."--P. 2-3.
+      Title from PDF title page (Newfound Press Web site, viewed on Feb. 7, 2011).
+      Includes bibliographical references (p. [159]-191).
+      "Found, Featured, then Forgotten examines that news coverage, focusing on how U.S. television news organizations treated a very significant antiwar group, the Vietnam Veterans Against the War (VVAW). This book is not a history of the VVAW."--P. 2-3.
+      Vietnam Veterans Against the War
+      Vietnam War, 1961-1975
+      Television broadcasting of news
+      Also available print-on-demand at publisher's website.
+      http://www.newfoundpress.utk.edu/pubs/harmon/
+      http://utpress.org/titles/
+      URN:ISBN:0979729289 (electronic bk.)
+      URN:ISBN:9780979729287 (electronic bk.)
+      DOI:10.7290/V7G44N61
+   </book>
+      </body>
+   </head>
+</doi_batch>

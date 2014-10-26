@@ -3,42 +3,102 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            version="4.3.3"
            xsi:schemaLocation="http://www.crossref.org/schema/4.3.3 http://www.crossref.org/schemas/crossref4.3.3.xsd">
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
-   <book>Hi!</book>
+   <head>
+      <doi_batch_id>10.5072/FK2</doi_batch_id>
+      <timestamp>20141026</timestamp>
+      <depositor>
+         <name>Bridger Dyson-Smith</name>
+         <email_address>bdysonsm@utk.edu</email_address>
+      </depositor>
+      <registrant>University of Tennessee</registrant>
+      <body>
+         <book>
+            <booK_metadata>
+               <contributors> Margaret Williamson.4<person_name sequence="first" contributor_role="author">
+                     <given_name>Margaret Williamson</given_name>
+                     <surname>Huber||Huber</surname>
+                  </person_name> Robert,4<person_name sequence="additional" contributor_role="author">
+                     <given_name>Robert</given_name>
+                     <surname>Shanafelt||Shanafelt</surname>
+                  </person_name>
+                  <organization sequence="additional" contributor_role="author">Southern Anthropological Society</organization>
+               </contributors>
+            </booK_metadata>
+         </book>
+         <book>
+            <booK_metadata>
+               <contributors> Marielle.4<person_name sequence="first" contributor_role="author">
+                     <given_name>Marielle</given_name>
+                     <surname>Veve||Veve</surname>
+                  </person_name>
+               </contributors>
+            </booK_metadata>
+         </book>
+         <book>
+            <booK_metadata>
+               <contributors> Lisa J.4<person_name sequence="first" contributor_role="author">
+                     <given_name>Lisa J</given_name>
+                     <surname>Lefler||Lefler</surname>
+                  </person_name>
+                  <organization sequence="additional" contributor_role="author">Southern Anthropological Society</organization>
+               </contributors>
+            </booK_metadata>
+         </book>
+         <book>
+            <booK_metadata>
+               <contributors> Robert,4<person_name sequence="first" contributor_role="author">
+                     <given_name>Robert</given_name>
+                     <surname>Shanafelt||Shanafelt</surname>
+                  </person_name>
+                  <organization sequence="additional" contributor_role="author">Southern Anthropological Society</organization>
+               </contributors>
+            </booK_metadata>
+         </book>
+         <book>
+            <booK_metadata>
+               <contributors> Hans Jakob Christoph von,4<person_name sequence="first" contributor_role="author">
+                     <given_name>Hans Jakob Christoph von</given_name>
+                     <surname>Grimmelshausen||Grimmelshausen</surname>
+                  </person_name> John C.,4<person_name sequence="additional" contributor_role="author">
+                     <given_name>John C.</given_name>
+                     <surname>Osborne||Osborne</surname>
+                  </person_name>
+               </contributors>
+            </booK_metadata>
+         </book>
+         <book>
+            <booK_metadata>
+               <contributors> Mark D.4<person_name sequence="first" contributor_role="author">
+                     <given_name>Mark D</given_name>
+                     <surname>Harmon||Harmon</surname>
+                  </person_name>
+               </contributors>
+            </booK_metadata>
+         </book>
+         <book>
+            <booK_metadata>
+               <contributors> A. Martin,4<person_name sequence="first" contributor_role="author">
+                     <given_name>A. Martin</given_name>
+                     <surname>Byers||Byers</surname>
+                  </person_name>
+               </contributors>
+            </booK_metadata>
+         </book>
+         <book>
+            <booK_metadata>
+               <contributors> Hans Jakob Christoph von,4<person_name sequence="first" contributor_role="author">
+                     <given_name>Hans Jakob Christoph von</given_name>
+                     <surname>Grimmelshausen||Grimmelshausen</surname>
+                  </person_name> John C.,4<person_name sequence="additional" contributor_role="author">
+                     <given_name>John C.</given_name>
+                     <surname>Osborne||Osborne</surname>
+                  </person_name> Robert Ludwig,4<person_name sequence="additional" contributor_role="author">
+                     <given_name>Robert Ludwig</given_name>
+                     <surname>Hiller||Hiller</surname>
+                  </person_name>
+               </contributors>
+            </booK_metadata>
+         </book>
+      </body>
+   </head>
 </doi_batch>

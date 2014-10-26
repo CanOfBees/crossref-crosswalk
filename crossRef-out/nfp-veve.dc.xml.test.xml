@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_batch xmlns="http://www.crossref.org/schema/4.3.3"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           version="4.3.3"
+           xsi:schemaLocation="http://www.crossref.org/schema/4.3.3 http://www.crossref.org/schemas/crossref4.3.3.xsd">
+   <head>
+      <doi_batch_id>10.5072/FK2</doi_batch_id>
+      <timestamp>20141026</timestamp>
+      <depositor>
+         <name>Bridger Dyson-Smith</name>
+         <email_address>bdysonsm@utk.edu</email_address>
+      </depositor>
+      <registrant>University of Tennessee</registrant>
+      <body>
+         <book>The streaming guide to cataloging remote access multimedia [electronic resource] : a how-to virtual manual for catalogers /Veve, Marielle.c2010.DOI:10.7290/V7BG2KWM
+      The streaming guide to cataloging remote access multimedia [electronic resource] : a how-to virtual manual for catalogers /
+      Veve, Marielle.
+      text
+      Electronic books.
+      Knoxville, Tenn. : Newfound Press, University of Tennessee Libraries,
+      c2010.
+      eng
+      Open access, peer-reviewed manual that provides self-paced tutorials (in streaming video) for cataloging remote access multimedia. Recommendations made in the manual follow guidelines stated in AACR2r, OCLC, OLAC and LC for describing remote electronic and integrating resources up to the year 2010. RDA guidelines are not integrated.
+      Title from HTML title page (Newfound Press Web site, viewed on Jan. 25, 2011).
+      Includes bibliographical references.
+      How to catalog Streaming video -- How to catalog Streaming audio -- How to catalog Podcasts -- How to catalog E-books -- How to catalog Web games.
+      Open access, peer-reviewed manual that provides self-paced tutorials (in streaming video) for cataloging remote access multimedia. Recommendations made in the manual follow guidelines stated in AACR2r, OCLC, OLAC and LC for describing remote electronic and integrating resources up to the year 2010. RDA guidelines are not integrated.
+      System requirements: Adobe Flash Player.
+      Cataloging of nonbook materials
+      Cataloging of audio-visual materials
+      Cataloging of electronic information resources
+      http://www.newfoundpress.utk.edu/pubs/veve/streaming-guides.html
+      http://www.newfoundpress.utk.edu/pubs/veve/
+      URN:ISBN:0979729297 (electronic bk.)
+      URN:ISBN:9780979729294 (electronic bk.)
+      DOI:10.7290/V7BG2KWM
+   </book>
+      </body>
+   </head>
+</doi_batch>

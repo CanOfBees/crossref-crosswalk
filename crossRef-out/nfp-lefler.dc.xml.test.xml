@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_batch xmlns="http://www.crossref.org/schema/4.3.3"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           version="4.3.3"
+           xsi:schemaLocation="http://www.crossref.org/schema/4.3.3 http://www.crossref.org/schemas/crossref4.3.3.xsd">
+   <head>
+      <doi_batch_id>10.5072/FK2</doi_batch_id>
+      <timestamp>20141026</timestamp>
+      <depositor>
+         <name>Bridger Dyson-Smith</name>
+         <email_address>bdysonsm@utk.edu</email_address>
+      </depositor>
+      <registrant>University of Tennessee</registrant>
+      <body>
+         <book>Southern foodways and culture [electronic resource] : local considerations and beyond /Lefler, Lisa J.Southern Anthropological Society.c2013.DOI:10.7290/V7WD3XHG
+      Southern foodways and culture [electronic resource] : local considerations and beyond /
+      Lefler, Lisa J.
+      Southern Anthropological Society.
+      text
+      Electronic books.
+      Knoxville, Tenn. : Newfound Press, University of Tennessee Libraries,
+      c2013.
+      eng
+      "Selected papers from the Annual Meeting of the Southern Anthropological Society,Oxford, Mississippi, February, 2007" -- t.p.
+      Includes bibliographical references.
+      Title from PDF title page (Newfound Press Web site, viewed on Feb. 4, 2013).
+      "Southern Anthropological Society" -- t.p. verso.
+      "Selected papers from the Annual Meeting of the Southern Anthropological Society,Oxford, Mississippi, February, 2007" -- t.p.
+      Cooking, American
+      Food
+      Food habits
+      http://www.newfoundpress.utk.edu/pubs/foodways
+      URN:ISBN:0984644547 -- Canceled or invalid ISBN
+      URN:ISBN:9780984644544 -- Canceled or invalid ISBN
+      DOI:10.7290/V7WD3XHG
+   </book>
+      </body>
+   </head>
+</doi_batch>

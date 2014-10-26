@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_batch xmlns="http://www.crossref.org/schema/4.3.3"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           version="4.3.3"
+           xsi:schemaLocation="http://www.crossref.org/schema/4.3.3 http://www.crossref.org/schemas/crossref4.3.3.xsd">
+   <head>
+      <doi_batch_id>10.5072/FK2</doi_batch_id>
+      <timestamp>20141026</timestamp>
+      <depositor>
+         <name>Bridger Dyson-Smith</name>
+         <email_address>bdysonsm@utk.edu</email_address>
+      </depositor>
+      <registrant>University of Tennessee</registrant>
+      <body>
+         <book>The wondrous bird's nest I [electronic resource] /Grimmelshausen, Hans Jakob Christoph von,Osborne, John C.,Hiller, Robert Ludwig,c2011.DOI:10.7290/V7QN64NR
+      The wondrous bird's nest I [electronic resource] /
+      Grimmelshausen, Hans Jakob Christoph von,
+      Osborne, John C.,
+      Hiller, Robert Ludwig,
+      text
+      Electronic books.
+      Knoxville, Tenn. : Newfound Press, University of Tennessee Libraries,
+      c2011.
+      eng
+      Title from PDF title page (Newfound Press Web site, viewed on July 8, 2011.)
+      Electronic edition of Robert L. Hiller's and John C. Osborne's "The Wondrous Bird's Nest I", an English translation of the German literary work "Das wunderbarliche Vogelnest I" (1672), originally by Hans Jacob Christoffel von Grimmelshausen.
+      Second part, The Wondrous Bird's Nest II, available at http://www.newfoundpress.utk.edu/pubs/osborne2/
+      Includes bibliographical references: p. ([185]-190).
+      Thirty Years' War, 1618-1648
+      http://www.newfoundpress.utk.edu/pubs/hiller/
+      URN:ISBN:9780984644506 -- Canceled or invalid ISBN
+      URN:ISBN:0984644504 -- Canceled or invalid ISBN
+      DOI:10.7290/V7QN64NR
+   </book>
+      </body>
+   </head>
+</doi_batch>

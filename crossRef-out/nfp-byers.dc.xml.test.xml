@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_batch xmlns="http://www.crossref.org/schema/4.3.3"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           version="4.3.3"
+           xsi:schemaLocation="http://www.crossref.org/schema/4.3.3 http://www.crossref.org/schemas/crossref4.3.3.xsd">
+   <head>
+      <doi_batch_id>10.5072/FK2</doi_batch_id>
+      <timestamp>20141026</timestamp>
+      <depositor>
+         <name>Bridger Dyson-Smith</name>
+         <email_address>bdysonsm@utk.edu</email_address>
+      </depositor>
+      <registrant>University of Tennessee</registrant>
+      <body>
+         <book>From Cahokia to Larson to Moundville : death, world renewal, and the sacred in the Mississippian social world of the late prehistoric Eastern Woodlands /Byers, A. Martin,DOI:10.7290/V76Q1V59
+     From Cahokia to Larson to Moundville : death, world renewal, and the sacred in the Mississippian social world of the late prehistoric Eastern Woodlands /
+      Byers, A. Martin,
+      text
+      Electronic books.
+      eng
+      Title from PDF title page (Newfound Press Web site, viewed on July 5, 2013).
+      Includes bibliographical references (pages [879]-906).
+      Prehistoric peoples
+      Social stratification
+      Social settlements
+      http://www.newfoundpress.utk.edu/pubs/byers/
+      URN:ISBN:9780984644551 -- Canceled or invalid ISBN
+      URN:ISBN:0984644555 -- Canceled or invalid ISBN
+      DOI:10.7290/V76Q1V59
+   </book>
+      </body>
+   </head>
+</doi_batch>

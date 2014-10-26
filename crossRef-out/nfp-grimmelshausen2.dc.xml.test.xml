@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_batch xmlns="http://www.crossref.org/schema/4.3.3"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           version="4.3.3"
+           xsi:schemaLocation="http://www.crossref.org/schema/4.3.3 http://www.crossref.org/schemas/crossref4.3.3.xsd">
+   <head>
+      <doi_batch_id>10.5072/FK2</doi_batch_id>
+      <timestamp>20141026</timestamp>
+      <depositor>
+         <name>Bridger Dyson-Smith</name>
+         <email_address>bdysonsm@utk.edu</email_address>
+      </depositor>
+      <registrant>University of Tennessee</registrant>
+      <body>
+         <book>The wondrous bird's nest II [electronic resource] /Grimmelshausen, Hans Jakob Christoph von,Osborne, John C.,c2011.DOI:10.7290/V7KW5CX1
+      The wondrous bird's nest II [electronic resource] /
+      Grimmelshausen, Hans Jakob Christoph von,
+      Osborne, John C.,
+      text
+      Electronic books.
+      Knoxville, Tenn. : Newfound Press, University of Tennessee Libraries,
+      c2011.
+      eng
+      Title from PDF title page (Newfound Press Web site, viewed on July 14, 2011.)
+      Electronic edition of John C. Osborne's "The Wondrous Bird's Nest II", an English translation of the German literary work "Das wunderbarliche Vogelnest II" (1675), originally by Hans Jacob Christoffel von Grimmelshausen.
+      First part, The Wondrous Bird's Nest I, available at http://www.newfoundpress.utk.edu/pubs/hiller/
+      Thirty Years' War, 1618-1648
+      http://www.newfoundpress.utk.edu/pubs/osborne2/
+      URN:ISBN:9780984644513 -- Canceled or invalid ISBN
+      URN:ISBN:00984644512 -- Canceled or invalid ISBN
+      DOI:10.7290/V7KW5CX1
+   </book>
+      </body>
+   </head>
+</doi_batch>
