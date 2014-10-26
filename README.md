@@ -10,7 +10,7 @@ It's currently set to only do the items that have DOIs. The remainder of the doc
 
 * alternately, if you have saxon (saxon-B or saxon-he) installed, you can run the following from the cli:
 
-    saxon -s:nfp-in -xsl:oaiDC-to-crossRef.xsl -o:crossRef-out
-    
+   saxon -it:main -xsl:oaiDC-to-crossref.xsl
+ 
 HTH.
 Bridger 
