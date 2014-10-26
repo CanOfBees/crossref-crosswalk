@@ -78,7 +78,7 @@
                   </contributors>
                   <titles>
                     <title>
-                      <xsl:value-of select="oai_dc:dc/dc:title"/>
+                      <xsl:value-of select="normalize-space(substring-before(oai_dc:dc/dc:title,'/'[last()]))"/>
                     </title>
                   </titles>
                   <publication_date media_type="online">
@@ -201,7 +201,7 @@
                   </contributors>
                   <titles>
                     <title>
-                      <xsl:value-of select="oai_dc:dc/dc:title"/>
+                      <xsl:value-of select="normalize-space(substring-before(oai_dc:dc/dc:title,'/'[last()]))"/>
                     </title>
                   </titles>
                   <publication_date media_type="online">
