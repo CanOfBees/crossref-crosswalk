@@ -11,29 +11,29 @@
          <email_address>bdysonsm@utk.edu</email_address>
       </depositor>
       <registrant>University of Tennessee</registrant>
-      <body>
-         <book>Found, featured, then forgotten [electronic resource] : U.S. network tv news and the Vietnam Veterans Against the War /Harmon, Mark D.c2011.DOI:10.7290/V7G44N61
-      Found, featured, then forgotten [electronic resource] : U.S. network tv news and the Vietnam Veterans Against the War /
-      Harmon, Mark D.
-      text
-      Electronic books.
-      Knoxville, Tenn. : Newfound Press, University of Tennessee Libraries,
-      c2011.
-      eng
-      "Found, Featured, then Forgotten examines that news coverage, focusing on how U.S. television news organizations treated a very significant antiwar group, the Vietnam Veterans Against the War (VVAW). This book is not a history of the VVAW."--P. 2-3.
-      Title from PDF title page (Newfound Press Web site, viewed on Feb. 7, 2011).
-      Includes bibliographical references (p. [159]-191).
-      "Found, Featured, then Forgotten examines that news coverage, focusing on how U.S. television news organizations treated a very significant antiwar group, the Vietnam Veterans Against the War (VVAW). This book is not a history of the VVAW."--P. 2-3.
-      Vietnam Veterans Against the War
-      Vietnam War, 1961-1975
-      Television broadcasting of news
-      Also available print-on-demand at publisher's website.
-      http://www.newfoundpress.utk.edu/pubs/harmon/
-      http://utpress.org/titles/
-      URN:ISBN:0979729289 (electronic bk.)
-      URN:ISBN:9780979729287 (electronic bk.)
-      DOI:10.7290/V7G44N61
-   </book>
-      </body>
    </head>
+   <body>
+      <book book_type="edited_book">
+         <book_metadata language="en">
+            <contributors>
+               <person_name sequence="first" contributor_role="author">
+                  <given_name>Mark D</given_name>
+                  <surname>Harmon</surname>
+               </person_name>
+            </contributors>
+            <titles>
+               <title>Found, featured, then forgotten [electronic resource] : U.S. network tv news and the Vietnam Veterans Against the War /</title>
+            </titles>
+            <publication_date media_type="online">
+               <year>2011</year>
+            </publication_date>
+            <isbn media_type="electronic">0979729289</isbn>
+            <isbn media_type="electronic">9780979729287</isbn>
+            <publisher>
+               <publisher_name>Newfound Press, University of Tennessee Libraries,</publisher_name>
+               <publisher_place>Knoxville, Tenn.</publisher_place>
+            </publisher>
+         </book_metadata>
+      </book>
+   </body>
 </doi_batch>

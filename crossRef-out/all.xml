@@ -11,94 +11,202 @@
          <email_address>bdysonsm@utk.edu</email_address>
       </depositor>
       <registrant>University of Tennessee</registrant>
-      <body>
-         <book>
-            <booK_metadata>
-               <contributors> Margaret Williamson.4<person_name sequence="first" contributor_role="author">
-                     <given_name>Margaret Williamson</given_name>
-                     <surname>Huber||Huber</surname>
-                  </person_name> Robert,4<person_name sequence="additional" contributor_role="author">
-                     <given_name>Robert</given_name>
-                     <surname>Shanafelt||Shanafelt</surname>
-                  </person_name>
-                  <organization sequence="additional" contributor_role="author">Southern Anthropological Society</organization>
-               </contributors>
-            </booK_metadata>
-         </book>
-         <book>
-            <booK_metadata>
-               <contributors> Marielle.4<person_name sequence="first" contributor_role="author">
-                     <given_name>Marielle</given_name>
-                     <surname>Veve||Veve</surname>
-                  </person_name>
-               </contributors>
-            </booK_metadata>
-         </book>
-         <book>
-            <booK_metadata>
-               <contributors> Lisa J.4<person_name sequence="first" contributor_role="author">
-                     <given_name>Lisa J</given_name>
-                     <surname>Lefler||Lefler</surname>
-                  </person_name>
-                  <organization sequence="additional" contributor_role="author">Southern Anthropological Society</organization>
-               </contributors>
-            </booK_metadata>
-         </book>
-         <book>
-            <booK_metadata>
-               <contributors> Robert,4<person_name sequence="first" contributor_role="author">
-                     <given_name>Robert</given_name>
-                     <surname>Shanafelt||Shanafelt</surname>
-                  </person_name>
-                  <organization sequence="additional" contributor_role="author">Southern Anthropological Society</organization>
-               </contributors>
-            </booK_metadata>
-         </book>
-         <book>
-            <booK_metadata>
-               <contributors> Hans Jakob Christoph von,4<person_name sequence="first" contributor_role="author">
-                     <given_name>Hans Jakob Christoph von</given_name>
-                     <surname>Grimmelshausen||Grimmelshausen</surname>
-                  </person_name> John C.,4<person_name sequence="additional" contributor_role="author">
-                     <given_name>John C.</given_name>
-                     <surname>Osborne||Osborne</surname>
-                  </person_name>
-               </contributors>
-            </booK_metadata>
-         </book>
-         <book>
-            <booK_metadata>
-               <contributors> Mark D.4<person_name sequence="first" contributor_role="author">
-                     <given_name>Mark D</given_name>
-                     <surname>Harmon||Harmon</surname>
-                  </person_name>
-               </contributors>
-            </booK_metadata>
-         </book>
-         <book>
-            <booK_metadata>
-               <contributors> A. Martin,4<person_name sequence="first" contributor_role="author">
-                     <given_name>A. Martin</given_name>
-                     <surname>Byers||Byers</surname>
-                  </person_name>
-               </contributors>
-            </booK_metadata>
-         </book>
-         <book>
-            <booK_metadata>
-               <contributors> Hans Jakob Christoph von,4<person_name sequence="first" contributor_role="author">
-                     <given_name>Hans Jakob Christoph von</given_name>
-                     <surname>Grimmelshausen||Grimmelshausen</surname>
-                  </person_name> John C.,4<person_name sequence="additional" contributor_role="author">
-                     <given_name>John C.</given_name>
-                     <surname>Osborne||Osborne</surname>
-                  </person_name> Robert Ludwig,4<person_name sequence="additional" contributor_role="author">
-                     <given_name>Robert Ludwig</given_name>
-                     <surname>Hiller||Hiller</surname>
-                  </person_name>
-               </contributors>
-            </booK_metadata>
-         </book>
-      </body>
    </head>
+   <body>
+      <book book_type="edited_book">
+         <book_metadata language="en">
+            <contributors>
+               <person_name sequence="first" contributor_role="author">
+                  <given_name>Margaret Williamson</given_name>
+                  <surname>Huber</surname>
+               </person_name>
+               <person_name sequence="additional" contributor_role="author">
+                  <given_name>Robert</given_name>
+                  <surname>Shanafelt</surname>
+               </person_name>
+               <organization sequence="additional" contributor_role="author">Southern Anthropological Society</organization>
+            </contributors>
+            <titles>
+               <title>Museums and memory [electronic resource] /</title>
+            </titles>
+            <publication_date media_type="online">
+               <year>2011</year>
+            </publication_date>
+            <isbn media_type="electronic">0984644520</isbn>
+            <isbn media_type="electronic">9780984644520</isbn>
+            <publisher>
+               <publisher_name>Newfound Press, University of Tennessee Libraries,</publisher_name>
+               <publisher_place>Knoxville, Tenn.</publisher_place>
+            </publisher>
+         </book_metadata>
+      </book>
+      <book book_type="edited_book">
+         <book_metadata language="en">
+            <contributors>
+               <person_name sequence="first" contributor_role="author">
+                  <given_name>Marielle</given_name>
+                  <surname>Veve</surname>
+               </person_name>
+            </contributors>
+            <titles>
+               <title>The streaming guide to cataloging remote access multimedia [electronic resource] : a how-to virtual manual for catalogers /</title>
+            </titles>
+            <publication_date media_type="online">
+               <year>2010</year>
+            </publication_date>
+            <isbn media_type="electronic">0979729297</isbn>
+            <isbn media_type="electronic">9780979729294</isbn>
+            <publisher>
+               <publisher_name>Newfound Press, University of Tennessee Libraries,</publisher_name>
+               <publisher_place>Knoxville, Tenn.</publisher_place>
+            </publisher>
+         </book_metadata>
+      </book>
+      <book book_type="edited_book">
+         <book_metadata language="en">
+            <contributors>
+               <person_name sequence="first" contributor_role="author">
+                  <given_name>Lisa J</given_name>
+                  <surname>Lefler</surname>
+               </person_name>
+               <organization sequence="additional" contributor_role="author">Southern Anthropological Society</organization>
+            </contributors>
+            <titles>
+               <title>Southern foodways and culture [electronic resource] : local considerations and beyond /</title>
+            </titles>
+            <publication_date media_type="online">
+               <year>2013</year>
+            </publication_date>
+            <isbn media_type="electronic">0984644547</isbn>
+            <isbn media_type="electronic">9780984644544</isbn>
+            <publisher>
+               <publisher_name>Newfound Press, University of Tennessee Libraries,</publisher_name>
+               <publisher_place>Knoxville, Tenn.</publisher_place>
+            </publisher>
+         </book_metadata>
+      </book>
+      <book book_type="edited_book">
+         <book_metadata language="en">
+            <contributors>
+               <person_name sequence="first" contributor_role="author">
+                  <given_name>Robert</given_name>
+                  <surname>Shanafelt</surname>
+               </person_name>
+               <organization sequence="additional" contributor_role="author">Southern Anthropological Society</organization>
+            </contributors>
+            <titles>
+               <title>Building bridges in anthropology [electronic resource] : understanding, acting, teaching, and theorizing /</title>
+            </titles>
+            <publication_date media_type="online">
+               <year>2012</year>
+            </publication_date>
+            <isbn media_type="electronic">0984644539</isbn>
+            <isbn media_type="electronic">9780984644537</isbn>
+            <publisher>
+               <publisher_name>Newfound Press, University of Tennessee Libraries,</publisher_name>
+               <publisher_place>Knoxville, Tenn.</publisher_place>
+            </publisher>
+         </book_metadata>
+      </book>
+      <book book_type="edited_book">
+         <book_metadata language="en">
+            <contributors>
+               <person_name sequence="first" contributor_role="author">
+                  <given_name>Hans Jakob Christoph von</given_name>
+                  <surname>Grimmelshausen</surname>
+               </person_name>
+               <person_name sequence="additional" contributor_role="author">
+                  <given_name>John C.</given_name>
+                  <surname>Osborne</surname>
+               </person_name>
+            </contributors>
+            <titles>
+               <title>The wondrous bird's nest II [electronic resource] /</title>
+            </titles>
+            <publication_date media_type="online">
+               <year>2011</year>
+            </publication_date>
+            <isbn media_type="electronic">9780984644513</isbn>
+            <isbn media_type="electronic">00984644512</isbn>
+            <publisher>
+               <publisher_name>Newfound Press, University of Tennessee Libraries,</publisher_name>
+               <publisher_place>Knoxville, Tenn.</publisher_place>
+            </publisher>
+         </book_metadata>
+      </book>
+      <book book_type="edited_book">
+         <book_metadata language="en">
+            <contributors>
+               <person_name sequence="first" contributor_role="author">
+                  <given_name>Mark D</given_name>
+                  <surname>Harmon</surname>
+               </person_name>
+            </contributors>
+            <titles>
+               <title>Found, featured, then forgotten [electronic resource] : U.S. network tv news and the Vietnam Veterans Against the War /</title>
+            </titles>
+            <publication_date media_type="online">
+               <year>2011</year>
+            </publication_date>
+            <isbn media_type="electronic">0979729289</isbn>
+            <isbn media_type="electronic">9780979729287</isbn>
+            <publisher>
+               <publisher_name>Newfound Press, University of Tennessee Libraries,</publisher_name>
+               <publisher_place>Knoxville, Tenn.</publisher_place>
+            </publisher>
+         </book_metadata>
+      </book>
+      <book book_type="edited_book">
+         <book_metadata language="en">
+            <contributors>
+               <person_name sequence="first" contributor_role="author">
+                  <given_name>A. Martin</given_name>
+                  <surname>Byers</surname>
+               </person_name>
+            </contributors>
+            <titles>
+               <title>From Cahokia to Larson to Moundville : death, world renewal, and the sacred in the Mississippian social world of the late prehistoric Eastern Woodlands /</title>
+            </titles>
+            <publication_date media_type="online">
+               <year>2014</year>
+            </publication_date>
+            <isbn media_type="electronic">9780984644551</isbn>
+            <isbn media_type="electronic">0984644555</isbn>
+            <publisher>
+               <publisher_name>Newfound Press, University of Tennessee Libraries</publisher_name>
+               <publisher_place>Knoxville, Tenn.</publisher_place>
+            </publisher>
+         </book_metadata>
+      </book>
+      <book book_type="edited_book">
+         <book_metadata language="en">
+            <contributors>
+               <person_name sequence="first" contributor_role="author">
+                  <given_name>Hans Jakob Christoph von</given_name>
+                  <surname>Grimmelshausen</surname>
+               </person_name>
+               <person_name sequence="additional" contributor_role="author">
+                  <given_name>John C.</given_name>
+                  <surname>Osborne</surname>
+               </person_name>
+               <person_name sequence="additional" contributor_role="author">
+                  <given_name>Robert Ludwig</given_name>
+                  <surname>Hiller</surname>
+               </person_name>
+            </contributors>
+            <titles>
+               <title>The wondrous bird's nest I [electronic resource] /</title>
+            </titles>
+            <publication_date media_type="online">
+               <year>2011</year>
+            </publication_date>
+            <isbn media_type="electronic">9780984644506</isbn>
+            <isbn media_type="electronic">0984644504</isbn>
+            <publisher>
+               <publisher_name>Newfound Press, University of Tennessee Libraries,</publisher_name>
+               <publisher_place>Knoxville, Tenn.</publisher_place>
+            </publisher>
+         </book_metadata>
+      </book>
+   </body>
 </doi_batch>

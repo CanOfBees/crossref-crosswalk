@@ -11,30 +11,34 @@
          <email_address>bdysonsm@utk.edu</email_address>
       </depositor>
       <registrant>University of Tennessee</registrant>
-      <body>
-         <book>Museums and memory [electronic resource] /Huber, Margaret Williamson.Shanafelt, Robert,Southern Anthropological Society.c2011.DOI:10.7290/V7H41PBD
-      Museums and memory [electronic resource] /
-      Huber, Margaret Williamson.
-      Shanafelt, Robert,
-      Southern Anthropological Society.
-      text
-      Electronic books.
-      Knoxville, Tenn. : Newfound Press, University of Tennessee Libraries,
-      c2011.
-      eng
-      "Selected papers from the Annual Meeting of the Southern Anthropological Society, Staunton, Virginia, Mar. 2008" - screen t.p.
-      "Southern Anthropological Society" -- screen t.p. verso.
-      Introduction / Margaret Williamson Huber -- Forget Culture, Remember Memory? (Keynote Address) / Eric Gable and Richard Handler -- Pests in the Garden: Testing the Garden-Hunting Model at the Rutherford-Kizer Site, Sumner County, Tennessee / Jennifer Clinton and Tanya M. Peres -- Remembering New Deal Archaeology in the Southeast: A Legacy in Museum Collections / Lynne P. Sullivan, Bobby R. Braly, Michaelyn S. Harle, and Shannon D. Koerner -- Memory within a University Landscape / Laura J. Galke and Bernard K. Means -- Memorialization and Living History in Chartering the Nation: Perspectives on the Frontier Culture Museum in Staunton, Virginia / Alison Bell and Parker Wolf -- The Jamestown Commemoration of 2007: Remembering our Diversity in the Past and Present / Vincent H. Melomo -- Vandalizing Meaning, Stealing Memory: Thoughts on Crime in Galleries and Museums / Avi Brisman -- Menace and Majesty: the Jocassee Gorges Region of Upper South Carolina / John M. Coggeshall -- Miss Lillibelle, Moonshine, and Midnight at the Crystal Café: Remembrances of a Southeast Arkansas Culture-scape / Susan Elizabeth Probasco -- Objects of Desire: Photographs and Retrospective Narratives of Fieldwork in Indonesia / Jennifer W. Nourse -- Memory and Celebration in Contemporary San Miguel de Allende, Mexico / Samantha Krause -- Moving Around in the Room: Cherokee Language, Worldview and Memory / Heidi Altman and Tom Belt.
-      Title from PDF title page (Newfound Press Web site, viewed on Oct. 11, 2011).
-      Includes bibliographical references.
-      Historical museums
-      Also available print-on-demand at publisher's website.
-      http://www.newfoundpress.utk.edu/pubs/museums/
-      http://utpress.org/bookdetail-2/?jobno=T01630
-      URN:ISBN:0984644520 (electronic bk.) -- Canceled or invalid ISBN
-      URN:ISBN:9780984644520 (electronic bk.) -- Canceled or invalid ISBN
-      DOI:10.7290/V7H41PBD
-   </book>
-      </body>
    </head>
+   <body>
+      <book book_type="edited_book">
+         <book_metadata language="en">
+            <contributors>
+               <person_name sequence="first" contributor_role="author">
+                  <given_name>Margaret Williamson</given_name>
+                  <surname>Huber</surname>
+               </person_name>
+               <person_name sequence="additional" contributor_role="author">
+                  <given_name>Robert</given_name>
+                  <surname>Shanafelt</surname>
+               </person_name>
+               <organization sequence="additional" contributor_role="author">Southern Anthropological Society</organization>
+            </contributors>
+            <titles>
+               <title>Museums and memory [electronic resource] /</title>
+            </titles>
+            <publication_date media_type="online">
+               <year>2011</year>
+            </publication_date>
+            <isbn media_type="electronic">0984644520</isbn>
+            <isbn media_type="electronic">9780984644520</isbn>
+            <publisher>
+               <publisher_name>Newfound Press, University of Tennessee Libraries,</publisher_name>
+               <publisher_place>Knoxville, Tenn.</publisher_place>
+            </publisher>
+         </book_metadata>
+      </book>
+   </body>
 </doi_batch>

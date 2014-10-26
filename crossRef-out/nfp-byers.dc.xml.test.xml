@@ -11,23 +11,29 @@
          <email_address>bdysonsm@utk.edu</email_address>
       </depositor>
       <registrant>University of Tennessee</registrant>
-      <body>
-         <book>From Cahokia to Larson to Moundville : death, world renewal, and the sacred in the Mississippian social world of the late prehistoric Eastern Woodlands /Byers, A. Martin,DOI:10.7290/V76Q1V59
-     From Cahokia to Larson to Moundville : death, world renewal, and the sacred in the Mississippian social world of the late prehistoric Eastern Woodlands /
-      Byers, A. Martin,
-      text
-      Electronic books.
-      eng
-      Title from PDF title page (Newfound Press Web site, viewed on July 5, 2013).
-      Includes bibliographical references (pages [879]-906).
-      Prehistoric peoples
-      Social stratification
-      Social settlements
-      http://www.newfoundpress.utk.edu/pubs/byers/
-      URN:ISBN:9780984644551 -- Canceled or invalid ISBN
-      URN:ISBN:0984644555 -- Canceled or invalid ISBN
-      DOI:10.7290/V76Q1V59
-   </book>
-      </body>
    </head>
+   <body>
+      <book book_type="edited_book">
+         <book_metadata language="en">
+            <contributors>
+               <person_name sequence="first" contributor_role="author">
+                  <given_name>A. Martin</given_name>
+                  <surname>Byers</surname>
+               </person_name>
+            </contributors>
+            <titles>
+               <title>From Cahokia to Larson to Moundville : death, world renewal, and the sacred in the Mississippian social world of the late prehistoric Eastern Woodlands /</title>
+            </titles>
+            <publication_date media_type="online">
+               <year>2014</year>
+            </publication_date>
+            <isbn media_type="electronic">9780984644551</isbn>
+            <isbn media_type="electronic">0984644555</isbn>
+            <publisher>
+               <publisher_name>Newfound Press, University of Tennessee                           Libraries</publisher_name>
+               <publisher_place>Knoxville, Tenn.</publisher_place>
+            </publisher>
+         </book_metadata>
+      </book>
+   </body>
 </doi_batch>

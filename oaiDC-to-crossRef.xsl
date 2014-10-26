@@ -30,67 +30,110 @@
             <email_address>bdysonsm@utk.edu</email_address>
           </depositor>
           <registrant>University of Tennessee</registrant>
-          <body>
-            <xsl:for-each select="collection('nfp-in/')">
-              <xsl:if test="/oai_dc:dc/dc:identifier[contains(.,'DOI:')]">
-                <book>
-                  <booK_metadata>
-                    <xsl:if test="./oai_dc:dc/dc:language = 'en'">
-                      <xsl:value-of select="'en'"/>
-                    </xsl:if>
-                    <contributors>
-                      <xsl:for-each select="oai_dc:dc/dc:creator">
-                        <xsl:variable name="vSurname"
-                          select="substring-before(.,',')"/>
-                        <!-- test -->
-                        <!--<xsl:variable name="vC"
+        </head>
+        <body>
+          <xsl:for-each select="collection('nfp-in/')">
+            <xsl:if test="oai_dc:dc/dc:identifier[contains(.,'DOI:')]">
+              <book book_type="edited_book">
+                <book_metadata
+                  language="{if (oai_dc:dc/dc:language eq 'eng') then 'en' else oai_dc:dc/dc:language}">
+                  <contributors>
+                    <xsl:for-each select="oai_dc:dc/dc:creator">
+                      <!-- test -->
+                      <!--<xsl:variable name="vC"
                           select="if (ends-with(.,'.') 
                                   and not(contains(.,','))) 
                                   then substring-before(.,'.'[last()]) else ''"/>-->
-                        <!-- end test -->
-                        <xsl:choose>
-                          <!-- corp name attempt -->
-                          <xsl:when test="ends-with(.,'.') and not(contains(.,','))">
-                            <organization
-                              sequence="{if (position() &gt; 1) then 'additional' else 'first'}"
-                              contributor_role="author">
-                              <xsl:value-of select="substring-before(.,'.'[last()])"/>
-                            </organization>  
-                          </xsl:when>
-                          <!-- human bean name -->
-                          <!--<xsl:when test="ends-with(.,'.')">
-                            <xsl:value-of select="concat(substring-before(substring-after(.,','),'.'[last()]), '2')"/>
-                          </xsl:when>
-                          <xsl:when test="ends-with(.,',')">
-                            <xsl:value-of select="concat(substring-before(substring-after(.,','),','[last()]), '3')"/>
-                          </xsl:when>-->
-                          <!-- give up -->
-                          <xsl:otherwise>
-                            <person_name
-                              sequence="{if (position() &gt; 1) then 'additional' else 'first'}"
-                              contributor_role="author">
-                              <given_name>
-                                <!--<xsl:value-of select="substring-before(substring-after(.,','),'.'[last()])"/>-->
-                                <xsl:value-of select="if (ends-with(.,',')) then 
+                      <!-- end test -->
+                      <xsl:choose>
+                        <!-- corp name attempt -->
+                        <xsl:when test="ends-with(.,'.') and not(contains(.,','))">
+                          <organization
+                            sequence="{if (position() &gt; 1) then 'additional' else 'first'}"
+                            contributor_role="author">
+                            <xsl:value-of select="substring-before(.,'.'[last()])"/>
+                          </organization>
+                        </xsl:when>
+                        <!-- try for people names -->
+                        <xsl:otherwise>
+                          <person_name
+                            sequence="{if (position() &gt; 1) then 'additional' else 'first'}"
+                            contributor_role="author">
+                            <given_name>
+                              <xsl:value-of
+                                select="if (ends-with(.,',')) then 
                                   normalize-space(substring-before(substring-after(.,','[position()=1]),','[last()])) 
                                   else if (ends-with(.,'.')) then 
                                   normalize-space(substring-before(substring-after(.,','[position()=1]),'.'[last()])) 
-                                  else ''"/>
-                              </given_name>
-                              <surname>
-                                <xsl:value-of select="normalize-space($vSurname)"/>||<xsl:value-of select="substring-before(.,','[position()=1])"/>
-                              </surname>
-                            </person_name>
-                          </xsl:otherwise>
-                        </xsl:choose>
-                      </xsl:for-each>
-                    </contributors>
-                  </booK_metadata>
-                </book>
-              </xsl:if>
-            </xsl:for-each>
-          </body>
-        </head>
+                                  else ''"
+                              />
+                            </given_name>
+                            <surname>
+                              <xsl:value-of select="substring-before(.,','[position()=1])"/>
+                            </surname>
+                          </person_name>
+                        </xsl:otherwise>
+                      </xsl:choose>
+                    </xsl:for-each>
+                  </contributors>
+                  <titles>
+                    <title>
+                      <xsl:value-of select="oai_dc:dc/dc:title"/>
+                    </title>
+                  </titles>
+                  <publication_date media_type="online">
+                    <year>
+                      <xsl:value-of
+                        select="if (oai_dc:dc/dc:date) then
+                                  (if (starts-with(oai_dc:dc/dc:date,'c')) then
+                                    substring-before(substring-after(oai_dc:dc/dc:date,'c'),'.') 
+                                    else substring-before(oai_dc:dc/dc:date,'.')) 
+                                else '2014'"
+                      />
+                    </year>
+                  </publication_date>
+                  <xsl:for-each select="oai_dc:dc/dc:identifier">
+                    <xsl:choose>
+                      <xsl:when test="starts-with(.,'URN:ISBN')">
+                        <isbn media_type="electronic">
+                          <xsl:analyze-string select="." regex="[0-9]+">
+                            <xsl:matching-substring>
+                              <xsl:value-of select="."/>
+                            </xsl:matching-substring>
+                          </xsl:analyze-string>
+                        </isbn>
+                      </xsl:when>
+                    </xsl:choose>
+                  </xsl:for-each>
+                  <xsl:choose>
+                    <xsl:when test="oai_dc:dc/dc:publisher">
+                      <publisher>
+                        <publisher_name>
+                          <xsl:value-of
+                            select="normalize-space(substring-after(oai_dc:dc/dc:publisher,':'))"/>
+                        </publisher_name>
+                        <publisher_place>
+                          <xsl:value-of
+                            select="normalize-space(substring-before(oai_dc:dc/dc:publisher,':'))"/>
+                        </publisher_place>
+                      </publisher>
+                    </xsl:when>
+                    <xsl:otherwise>
+                      <publisher>
+                        <publisher_name>
+                          <xsl:value-of select="'Newfound Press, University of Tennessee Libraries'"/>
+                        </publisher_name>
+                        <publisher_place>
+                          <xsl:value-of select="'Knoxville, Tenn.'"/>
+                        </publisher_place>
+                      </publisher>
+                    </xsl:otherwise>
+                  </xsl:choose>
+                </book_metadata>
+              </book>
+            </xsl:if>
+          </xsl:for-each>
+        </body>
       </doi_batch>
     </xsl:result-document>
 
@@ -112,22 +155,109 @@
                 <email_address>bdysonsm@utk.edu</email_address>
               </depositor>
               <registrant>University of Tennessee</registrant>
-              <body>
-                <book>
-                  <xsl:apply-templates select="oai_dc:dc/dc:title"/>
-                  <xsl:apply-templates select="oai_dc:dc/dc:creator"/>
-                  <xsl:apply-templates select="oai_dc:dc/dc:date"/>
-                  <xsl:apply-templates select="oai_dc:dc/dc:identifier[matches(.,'^DOI:')]"/>
-                  <xsl:apply-templates select="oai_dc:dc"/>
-                </book>
-              </body>
             </head>
+            <body>
+              <book book_type="edited_book">
+                <book_metadata
+                  language="{if (oai_dc:dc/dc:language eq 'eng') then 'en' else oai_dc:dc/dc:language}">
+                  <contributors>
+                    <xsl:for-each select="oai_dc:dc/dc:creator">
+                      <!-- test -->
+                      <!--<xsl:variable name="vC"
+                          select="if (ends-with(.,'.') 
+                                  and not(contains(.,','))) 
+                                  then substring-before(.,'.'[last()]) else ''"/>-->
+                      <!-- end test -->
+                      <xsl:choose>
+                        <!-- corp name attempt -->
+                        <xsl:when test="ends-with(.,'.') and not(contains(.,','))">
+                          <organization
+                            sequence="{if (position() &gt; 1) then 'additional' else 'first'}"
+                            contributor_role="author">
+                            <xsl:value-of select="substring-before(.,'.'[last()])"/>
+                          </organization>
+                        </xsl:when>
+                        <!-- try for people names -->
+                        <xsl:otherwise>
+                          <person_name
+                            sequence="{if (position() &gt; 1) then 'additional' else 'first'}"
+                            contributor_role="author">
+                            <given_name>
+                              <xsl:value-of
+                                select="if (ends-with(.,',')) then 
+                                normalize-space(substring-before(substring-after(.,','[position()=1]),','[last()])) 
+                                else if (ends-with(.,'.')) then 
+                                normalize-space(substring-before(substring-after(.,','[position()=1]),'.'[last()])) 
+                                else ''"
+                              />
+                            </given_name>
+                            <surname>
+                              <xsl:value-of select="substring-before(.,','[position()=1])"/>
+                            </surname>
+                          </person_name>
+                        </xsl:otherwise>
+                      </xsl:choose>
+                    </xsl:for-each>
+                  </contributors>
+                  <titles>
+                    <title>
+                      <xsl:value-of select="oai_dc:dc/dc:title"/>
+                    </title>
+                  </titles>
+                  <publication_date media_type="online">
+                    <year>
+                      <xsl:value-of
+                        select="if (oai_dc:dc/dc:date) then
+                        (if (starts-with(oai_dc:dc/dc:date,'c')) then
+                        substring-before(substring-after(oai_dc:dc/dc:date,'c'),'.') 
+                        else substring-before(oai_dc:dc/dc:date,'.')) 
+                        else '2014'"
+                      />
+                    </year>
+                  </publication_date>
+                  <xsl:for-each select="oai_dc:dc/dc:identifier">
+                    <xsl:choose>
+                      <xsl:when test="starts-with(.,'URN:ISBN')">
+                        <isbn media_type="electronic">
+                          <xsl:analyze-string select="." regex="[0-9]+">
+                            <xsl:matching-substring>
+                              <xsl:value-of select="."/>
+                            </xsl:matching-substring>
+                          </xsl:analyze-string>
+                        </isbn>
+                      </xsl:when>
+                    </xsl:choose>
+                  </xsl:for-each>
+                  <xsl:choose>
+                    <xsl:when test="oai_dc:dc/dc:publisher">
+                      <publisher>
+                        <publisher_name>
+                          <xsl:value-of
+                            select="normalize-space(substring-after(oai_dc:dc/dc:publisher,':'))"/>
+                        </publisher_name>
+                        <publisher_place>
+                          <xsl:value-of
+                            select="normalize-space(substring-before(oai_dc:dc/dc:publisher,':'))"/>
+                        </publisher_place>
+                      </publisher>
+                    </xsl:when>
+                    <xsl:otherwise>
+                      <publisher>
+                        <publisher_name><xsl:value-of select="'Newfound Press, University of Tennessee
+                          Libraries'"/></publisher_name>
+                        <publisher_place><xsl:value-of select="'Knoxville, Tenn.'"/></publisher_place>
+                      </publisher>
+                    </xsl:otherwise>
+                  </xsl:choose>
+                </book_metadata>
+              </book>
+            </body>
           </doi_batch>
         </xsl:result-document>
       </xsl:if>
     </xsl:for-each>
   </xsl:template>
   <!-- end main template -->
-  
+
 
 </xsl:stylesheet>
