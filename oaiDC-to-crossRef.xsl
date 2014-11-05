@@ -2,7 +2,8 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
-  xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doi_batch="http://www.crossref.org/schema/4.3.3"
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:doi_batch="http://www.crossref.org/schema/4.3.3"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd http://www.crossref.org/schema/4.3.3 http://www.crossref.org/schemas/crossref4.3.3.xsd"
   exclude-result-prefixes="#all" xpath-default-namespace="http://www.crossref.org/schema/4.3.3"
@@ -21,9 +22,11 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.crossref.org/schema/4.3.3 http://www.crossref.org/schemas/crossref4.3.3.xsd">
         <head>
-          <doi_batch_id>10.5072/FK2</doi_batch_id>
+          <doi_batch_id>
+            <xsl:value-of select="format-dateTime(current-dateTime(),'[Y]-[M,2]-[D,2]-[H]-[m]-[s][f]')"/>
+          </doi_batch_id>
           <timestamp>
-            <xsl:value-of select="format-date(current-date(), '[Y][M][D]')"/>
+            <xsl:value-of select="format-date(current-date(),'[Y][M][D]')"/>
           </timestamp>
           <depositor>
             <name>Bridger Dyson-Smith</name>
@@ -129,6 +132,10 @@
                       </publisher>
                     </xsl:otherwise>
                   </xsl:choose>
+                  <doi_data>
+                    <doi>10.5072/FK2</doi>
+                    <resource>http://www.example.org/</resource>
+                  </doi_data>
                 </book_metadata>
               </book>
             </xsl:if>
@@ -146,7 +153,9 @@
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:schemaLocation="http://www.crossref.org/schema/4.3.3 http://www.crossref.org/schemas/crossref4.3.3.xsd">
             <head>
-              <doi_batch_id>10.5072/FK2</doi_batch_id>
+              <doi_batch_id>
+                <xsl:value-of select="format-dateTime(current-dateTime(),'[Y]-[M,2]-[D,2]-[H]-[m]-[s][f]')"/>
+              </doi_batch_id>
               <timestamp>
                 <xsl:value-of select="format-date(current-date(), '[Y][M][D]')"/>
               </timestamp>
@@ -243,12 +252,17 @@
                     </xsl:when>
                     <xsl:otherwise>
                       <publisher>
-                        <publisher_name><xsl:value-of select="'Newfound Press, University of Tennessee
-                          Libraries'"/></publisher_name>
+                        <publisher_name>
+                          <xsl:value-of select="'Newfound Press, University of Tennessee Libraries'"/>
+                        </publisher_name>
                         <publisher_place><xsl:value-of select="'Knoxville, Tenn.'"/></publisher_place>
                       </publisher>
                     </xsl:otherwise>
                   </xsl:choose>
+                  <doi_data>
+                    <doi>10.5072/FK2</doi>
+                    <resource>http://www.example.org/</resource>
+                  </doi_data>
                 </book_metadata>
               </book>
             </body>

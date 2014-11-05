@@ -4,8 +4,8 @@
            version="4.3.3"
            xsi:schemaLocation="http://www.crossref.org/schema/4.3.3 http://www.crossref.org/schemas/crossref4.3.3.xsd">
    <head>
-      <doi_batch_id>2014-10-26-11-02-30</doi_batch_id>
-      <timestamp>20141026</timestamp>
+      <doi_batch_id>2014-11-05-11-30-18663</doi_batch_id>
+      <timestamp>2014115</timestamp>
       <depositor>
          <name>Bridger Dyson-Smith</name>
          <email_address>bdysonsm@utk.edu</email_address>
@@ -30,13 +30,13 @@
             <isbn media_type="electronic">9780984644551</isbn>
             <isbn media_type="electronic">0984644555</isbn>
             <publisher>
-               <publisher_name>Newfound Press, University of Tennessee                           Libraries</publisher_name>
+               <publisher_name>Newfound Press, University of Tennessee Libraries</publisher_name>
                <publisher_place>Knoxville, Tenn.</publisher_place>
             </publisher>
             <doi_data>
                <doi>10.5072/FK2</doi>
                <resource>http://www.example.org/</resource>
-            </doi_data>   
+            </doi_data>
          </book_metadata>
       </book>
    </body>
