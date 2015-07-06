@@ -3,10 +3,10 @@
   xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
   xmlns:dc="http://purl.org/dc/elements/1.1/" 
-  xmlns:doi_batch="http://www.crossref.org/schema/4.3.3"
+  xmlns:doi_batch="http://www.crossref.org/schema/4.3.6"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd http://www.crossref.org/schema/4.3.3 http://www.crossref.org/schemas/crossref4.3.3.xsd"
-  exclude-result-prefixes="#all" xpath-default-namespace="http://www.crossref.org/schema/4.3.3"
+  xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd http://www.crossref.org/schema/4.3.6 http://www.crossref.org/schemas/crossref4.3.6.xsd"
+  exclude-result-prefixes="#all" xpath-default-namespace="http://www.crossref.org/schema/4.3.6"
   version="2.0">
 
   <!-- convert NFP OAI_DC to CrossRef -->
@@ -18,9 +18,9 @@
     <!-- spit out one big record -->
     <xsl:result-document href="crossRef-out/all.xml">
       <!-- document root w/namespaces -->
-      <doi_batch version="4.3.3" xmlns="http://www.crossref.org/schema/4.3.3"
+      <doi_batch version="4.3.6" xmlns="http://www.crossref.org/schema/4.3.6"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.crossref.org/schema/4.3.3 http://www.crossref.org/schemas/crossref4.3.3.xsd">
+        xsi:schemaLocation="http://www.crossref.org/schema/4.3.6 http://www.crossref.org/schemas/crossref4.3.6.xsd">
         <head>
           <doi_batch_id>
             <xsl:value-of select="format-dateTime(current-dateTime(),'[Y]-[M,2]-[D,2]-[H]-[m]-[s][f]')"/>
@@ -44,8 +44,8 @@
                     <xsl:for-each select="oai_dc:dc/dc:creator">
                       <!-- test -->
                       <!--<xsl:variable name="vC"
-                          select="if (ends-with(.,'.') 
-                                  and not(contains(.,','))) 
+                          select="if (ends-with(.,'.')
+                                  and not(contains(.,',')))
                                   then substring-before(.,'.'[last()]) else ''"/>-->
                       <!-- end test -->
                       <xsl:choose>
@@ -64,10 +64,10 @@
                             contributor_role="author">
                             <given_name>
                               <xsl:value-of
-                                select="if (ends-with(.,',')) then 
-                                  normalize-space(substring-before(substring-after(.,','[position()=1]),','[last()])) 
-                                  else if (ends-with(.,'.')) then 
-                                  normalize-space(substring-before(substring-after(.,','[position()=1]),'.'[last()])) 
+                                select="if (ends-with(.,',')) then
+                                  normalize-space(substring-before(substring-after(.,','[position()=1]),','[last()]))
+                                  else if (ends-with(.,'.')) then
+                                  normalize-space(substring-before(substring-after(.,','[position()=1]),'.'[last()]))
                                   else ''"
                               />
                             </given_name>
@@ -89,8 +89,8 @@
                       <xsl:value-of
                         select="if (oai_dc:dc/dc:date) then
                                   (if (starts-with(oai_dc:dc/dc:date,'c')) then
-                                    substring-before(substring-after(oai_dc:dc/dc:date,'c'),'.') 
-                                    else substring-before(oai_dc:dc/dc:date,'.')) 
+                                    substring-before(substring-after(oai_dc:dc/dc:date,'c'),'.')
+                                    else substring-before(oai_dc:dc/dc:date,'.'))
                                 else '2014'"
                       />
                     </year>
@@ -149,9 +149,9 @@
       <xsl:if test="/oai_dc:dc/dc:identifier[contains(.,'DOI:')]">
         <xsl:variable name="vName" select="tokenize(base-uri(),'/')[last()]"/>
         <xsl:result-document href="crossRef-out/{concat($vName,'.test.xml')}">
-          <doi_batch version="4.3.3" xmlns="http://www.crossref.org/schema/4.3.3"
+          <doi_batch version="4.3.6" xmlns="http://www.crossref.org/schema/4.3.6"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:schemaLocation="http://www.crossref.org/schema/4.3.3 http://www.crossref.org/schemas/crossref4.3.3.xsd">
+            xsi:schemaLocation="http://www.crossref.org/schema/4.3.6 http://www.crossref.org/schemas/crossref4.3.6.xsd">
             <head>
               <doi_batch_id>
                 <xsl:value-of select="format-dateTime(current-dateTime(),'[Y]-[M,2]-[D,2]-[H]-[m]-[s][f]')"/>
