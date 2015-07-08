@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<doi_batch xmlns="http://www.crossref.org/schema/4.3.3"
+<doi_batch xmlns="http://www.crossref.org/schema/4.3.6"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           version="4.3.3"
-           xsi:schemaLocation="http://www.crossref.org/schema/4.3.3 http://www.crossref.org/schemas/crossref4.3.3.xsd">
+           version="4.3.6"
+           xsi:schemaLocation="http://www.crossref.org/schema/4.3.6 http://www.crossref.org/schemas/crossref4.3.6.xsd">
    <head>
-      <doi_batch_id>2014-11-05-11-30-18663</doi_batch_id>
-      <timestamp>2014115</timestamp>
+      <doi_batch_id>2015-07-08-10-54-11641</doi_batch_id>
+      <timestamp>201578</timestamp>
       <depositor>
-         <name>Bridger Dyson-Smith</name>
+         <depositor_name>Bridger Dyson-Smith</depositor_name>
          <email_address>bdysonsm@utk.edu</email_address>
       </depositor>
       <registrant>University of Tennessee</registrant>
@@ -17,20 +17,20 @@
          <book_metadata language="en">
             <contributors>
                <person_name sequence="first" contributor_role="author">
-                  <given_name>A. Martin</given_name>
-                  <surname>Byers</surname>
+                  <given_name>Marielle</given_name>
+                  <surname>Veve</surname>
                </person_name>
             </contributors>
             <titles>
-               <title>From Cahokia to Larson to Moundville : death, world renewal, and the sacred in the Mississippian social world of the late prehistoric Eastern Woodlands</title>
+               <title>The streaming guide to cataloging remote access multimedia [electronic resource] : a how-to virtual manual for catalogers</title>
             </titles>
             <publication_date media_type="online">
-               <year>2014</year>
+               <year>2010</year>
             </publication_date>
-            <isbn media_type="electronic">9780984644551</isbn>
-            <isbn media_type="electronic">0984644555</isbn>
+            <isbn media_type="electronic">0979729297</isbn>
+            <isbn media_type="electronic">9780979729294</isbn>
             <publisher>
-               <publisher_name>Newfound Press, University of Tennessee Libraries</publisher_name>
+               <publisher_name>Newfound Press, University of Tennessee Libraries,</publisher_name>
                <publisher_place>Knoxville, Tenn.</publisher_place>
             </publisher>
             <doi_data>

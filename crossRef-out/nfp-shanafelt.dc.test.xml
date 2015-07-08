@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<doi_batch xmlns="http://www.crossref.org/schema/4.3.3"
+<doi_batch xmlns="http://www.crossref.org/schema/4.3.6"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           version="4.3.3"
-           xsi:schemaLocation="http://www.crossref.org/schema/4.3.3 http://www.crossref.org/schemas/crossref4.3.3.xsd">
+           version="4.3.6"
+           xsi:schemaLocation="http://www.crossref.org/schema/4.3.6 http://www.crossref.org/schemas/crossref4.3.6.xsd">
    <head>
-      <doi_batch_id>2014-11-05-11-30-18663</doi_batch_id>
-      <timestamp>2014115</timestamp>
+      <doi_batch_id>2015-07-08-10-54-11641</doi_batch_id>
+      <timestamp>201578</timestamp>
       <depositor>
-         <name>Bridger Dyson-Smith</name>
+         <depositor_name>Bridger Dyson-Smith</depositor_name>
          <email_address>bdysonsm@utk.edu</email_address>
       </depositor>
       <registrant>University of Tennessee</registrant>
@@ -16,19 +16,20 @@
       <book book_type="edited_book">
          <book_metadata language="en">
             <contributors>
+               <organization sequence="first" contributor_role="author">Southern Anthropological Society</organization>
                <person_name sequence="first" contributor_role="author">
-                  <given_name>Mark D</given_name>
-                  <surname>Harmon</surname>
+                  <given_name>Robert</given_name>
+                  <surname>Shanafelt</surname>
                </person_name>
             </contributors>
             <titles>
-               <title>Found, featured, then forgotten [electronic resource] : U.S. network tv news and the Vietnam Veterans Against the War</title>
+               <title>Building bridges in anthropology [electronic resource] : understanding, acting, teaching, and theorizing</title>
             </titles>
             <publication_date media_type="online">
-               <year>2011</year>
+               <year>2012</year>
             </publication_date>
-            <isbn media_type="electronic">0979729289</isbn>
-            <isbn media_type="electronic">9780979729287</isbn>
+            <isbn media_type="electronic">0984644539</isbn>
+            <isbn media_type="electronic">9780984644537</isbn>
             <publisher>
                <publisher_name>Newfound Press, University of Tennessee Libraries,</publisher_name>
                <publisher_place>Knoxville, Tenn.</publisher_place>
