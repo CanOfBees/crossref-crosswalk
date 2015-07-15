@@ -4,8 +4,8 @@
            version="4.3.6"
            xsi:schemaLocation="http://www.crossref.org/schema/4.3.6 http://www.crossref.org/schemas/crossref4.3.6.xsd">
    <head>
-      <doi_batch_id>2015-07-08-10-54-11641</doi_batch_id>
-      <timestamp>201578</timestamp>
+      <doi_batch_id>2015-07-15-12-53-09267</doi_batch_id>
+      <timestamp>2015715</timestamp>
       <depositor>
          <depositor_name>Bridger Dyson-Smith</depositor_name>
          <email_address>bdysonsm@utk.edu</email_address>
@@ -21,7 +21,7 @@
                   <given_name>Robert</given_name>
                   <surname>Shanafelt</surname>
                </person_name>
-               <person_name sequence="first" contributor_role="author">
+               <person_name sequence="additional" contributor_role="author">
                   <given_name>Margaret Williamson</given_name>
                   <surname>Huber</surname>
                </person_name>
@@ -39,8 +39,40 @@
                <publisher_place>Knoxville, Tenn.</publisher_place>
             </publisher>
             <doi_data>
-               <doi>10.5072/FK2</doi>
-               <resource>http://www.example.org/</resource>
+               <doi>10.7290/V7H41PBD</doi>
+               <timestamp>2015715</timestamp>
+               <resource>http://www.newfoundpress.utk.edu/pubs/museums/</resource>
+            </doi_data>
+         </book_metadata>
+      </book>
+      <book book_type="edited_book">
+         <book_metadata language="en">
+            <contributors>
+               <person_name sequence="first" contributor_role="author">
+                  <given_name>Arthur J</given_name>
+                  <surname>Vidich</surname>
+               </person_name>
+               <person_name sequence="additional" contributor_role="editor">
+                  <given_name>Robert</given_name>
+                  <surname>Jackall</surname>
+               </person_name>
+            </contributors>
+            <titles>
+               <title>With a critical eye : an intellectual and his times</title>
+            </titles>
+            <publication_date media_type="online">
+               <year>2009</year>
+            </publication_date>
+            <isbn media_type="electronic">139780979729249</isbn>
+            <isbn media_type="electronic">100979729246</isbn>
+            <publisher>
+               <publisher_name>Newfound Press, University of Tennessee Libraries</publisher_name>
+               <publisher_place>Knoxville, Tenn.</publisher_place>
+            </publisher>
+            <doi_data>
+               <doi>10.7290/V7VD6WC3</doi>
+               <timestamp>2015715</timestamp>
+               <resource>http://www.newfoundpress.utk.edu/pubs/vidich/</resource>
             </doi_data>
          </book_metadata>
       </book>
@@ -65,8 +97,9 @@
                <publisher_place>Knoxville, Tenn.</publisher_place>
             </publisher>
             <doi_data>
-               <doi>10.5072/FK2</doi>
-               <resource>http://www.example.org/</resource>
+               <doi>10.7290/V7BG2KWM</doi>
+               <timestamp>2015715</timestamp>
+               <resource>http://www.newfoundpress.utk.edu/pubs/veve/</resource>
             </doi_data>
          </book_metadata>
       </book>
@@ -92,8 +125,9 @@
                <publisher_place>Knoxville, Tenn.</publisher_place>
             </publisher>
             <doi_data>
-               <doi>10.5072/FK2</doi>
-               <resource>http://www.example.org/</resource>
+               <doi>10.7290/V7WD3XHG</doi>
+               <timestamp>2015715</timestamp>
+               <resource>http://www.newfoundpress.utk.edu/pubs/foodways</resource>
             </doi_data>
          </book_metadata>
       </book>
@@ -119,8 +153,137 @@
                <publisher_place>Knoxville, Tenn.</publisher_place>
             </publisher>
             <doi_data>
-               <doi>10.5072/FK2</doi>
-               <resource>http://www.example.org/</resource>
+               <doi>10.7290/V7RN35S4</doi>
+               <timestamp>2015715</timestamp>
+               <resource>http://www.newfoundpress.utk.edu/pubs/bridges/</resource>
+            </doi_data>
+         </book_metadata>
+      </book>
+      <book book_type="edited_book">
+         <book_metadata language="en">
+            <contributors>
+               <person_name sequence="first" contributor_role="author">
+                  <given_name>Christopher J.</given_name>
+                  <surname>Walsh</surname>
+               </person_name>
+            </contributors>
+            <titles>
+               <title>In the wake of the sun : navigating the southern works of Cormac McCarthy</title>
+            </titles>
+            <publication_date media_type="online">
+               <year>2009</year>
+            </publication_date>
+            <isbn media_type="electronic">139780979729270</isbn>
+            <isbn media_type="electronic">100979729270</isbn>
+            <publisher>
+               <publisher_name>Newfound Press, University of Tennessee Libraries</publisher_name>
+               <publisher_place>Knoxville, Tenn.</publisher_place>
+            </publisher>
+            <doi_data>
+               <doi>10.7290/V7MW2F2T</doi>
+               <timestamp>2015715</timestamp>
+               <resource>http://www.newfoundpress.utk.edu/pubs/walsh/</resource>
+            </doi_data>
+         </book_metadata>
+      </book>
+      <book book_type="edited_book">
+         <book_metadata language="en">
+            <contributors>
+               <person_name sequence="first" contributor_role="author">
+                  <given_name>Judson</given_name>
+                  <surname>MacLaury</surname>
+               </person_name>
+               <person_name sequence="additional" contributor_role="author">
+                  <given_name>Ray</given_name>
+                  <surname>Marshall</surname>
+               </person_name>
+            </contributors>
+            <titles>
+               <title>To advance their opportunities : federal policies toward African American workers from World War I to the Civil Rights Act of 1964</title>
+            </titles>
+            <publication_date media_type="online">
+               <year>2008</year>
+            </publication_date>
+            <isbn media_type="electronic">0979729238</isbn>
+            <publisher>
+               <publisher_name>Newfound Press, University of Tennessee Libraries</publisher_name>
+               <publisher_place>Knoxville, Tenn.</publisher_place>
+            </publisher>
+            <doi_data>
+               <doi>10.7290/V7PN93HC</doi>
+               <timestamp>2015715</timestamp>
+               <resource>http://www.lib.utk.edu/newfoundpress/pubs/maclaury/to-advance.html</resource>
+            </doi_data>
+         </book_metadata>
+      </book>
+      <book book_type="edited_book">
+         <book_metadata language="en">
+            <contributors>
+               <organization sequence="first" contributor_role="author">Southern Anthropological Society</organization>
+               <person_name sequence="first" contributor_role="author">
+                  <given_name>Brandon D.</given_name>
+                  <surname>Lundy</surname>
+               </person_name>
+               <person_name sequence="additional" contributor_role="author">
+                  <given_name>Robert</given_name>
+                  <surname>Shanafelt</surname>
+               </person_name>
+            </contributors>
+            <titles>
+               <title>The art of anthropology</title>
+            </titles>
+            <publication_date media_type="online">
+               <year>2013</year>
+            </publication_date>
+            <isbn media_type="electronic">9780984644568</isbn>
+            <isbn media_type="electronic">0984644563</isbn>
+            <publisher>
+               <publisher_name>Newfound Press, University of Tennessee Libraries,</publisher_name>
+               <publisher_place>Knoxville, Tenn.</publisher_place>
+            </publisher>
+            <doi_data>
+               <doi>10.7290/V7Z60KZK</doi>
+               <timestamp>2015715</timestamp>
+               <resource>http://www.newfoundpress.utk.edu/pubs/lundy/</resource>
+            </doi_data>
+         </book_metadata>
+      </book>
+      <book book_type="edited_book">
+         <book_metadata language="en">
+            <contributors>
+               <person_name sequence="first" contributor_role="author">
+                  <given_name>Michael A.</given_name>
+                  <surname>Lofaro</surname>
+               </person_name>
+               <person_name sequence="additional" contributor_role="author">
+                  <given_name>Richard Beale</given_name>
+                  <surname>Davis</surname>
+               </person_name>
+               <person_name sequence="additional" contributor_role="author">
+                  <given_name>George M</given_name>
+                  <surname>Barringer</surname>
+               </person_name>
+               <person_name sequence="additional" contributor_role="author">
+                  <given_name>Sandra G</given_name>
+                  <surname>Hancock</surname>
+               </person_name>
+            </contributors>
+            <titles>
+               <title>Southern manuscript sermons before 1800 [electronic resource] : a bibliography</title>
+            </titles>
+            <publication_date media_type="online">
+               <year>2010</year>
+            </publication_date>
+            <isbn media_type="electronic">100979729262</isbn>
+            <isbn media_type="electronic">139780979729263</isbn>
+            <publisher>
+               <publisher_name>Newfound Press, University of Tennessee Libraries,</publisher_name>
+               <publisher_place>Knoxville, Tenn.</publisher_place>
+            </publisher>
+            <doi_data>
+               <doi>10.7290/V77P8W94</doi>
+               <timestamp>2015715</timestamp>
+               <resource>http://www.lib.utk.edu/newfoundpress/pubs/lofaro/</resource>
             </doi_data>
          </book_metadata>
       </book>
@@ -149,8 +312,47 @@
                <publisher_place>Knoxville, Tenn.</publisher_place>
             </publisher>
             <doi_data>
-               <doi>10.5072/FK2</doi>
-               <resource>http://www.example.org/</resource>
+               <doi>10.7290/V7KW5CX1</doi>
+               <timestamp>2015715</timestamp>
+               <resource>http://www.newfoundpress.utk.edu/pubs/osborne2/</resource>
+            </doi_data>
+         </book_metadata>
+      </book>
+      <book book_type="edited_book">
+         <book_metadata language="en">
+            <contributors>
+               <person_name sequence="first" contributor_role="author">
+                  <given_name>Lera</given_name>
+                  <surname>Knox</surname>
+               </person_name>
+               <person_name sequence="additional" contributor_role="author">
+                  <given_name>Lera</given_name>
+                  <surname>Knox</surname>
+               </person_name>
+               <person_name sequence="additional" contributor_role="author">
+                  <given_name>Margaret Knox</given_name>
+                  <surname>Morgan</surname>
+               </person_name>
+               <person_name sequence="additional" contributor_role="author">
+                  <given_name>Carol Knox</given_name>
+                  <surname>Ball</surname>
+               </person_name>
+            </contributors>
+            <titles>
+               <title>Travels of a country woman</title>
+            </titles>
+            <publication_date media_type="online">
+               <year>2007</year>
+            </publication_date>
+            <isbn media_type="electronic">0979729211</isbn>
+            <publisher>
+               <publisher_name>Newfound Press, University of Tennessee Libraries</publisher_name>
+               <publisher_place>Knoxville, Tenn.</publisher_place>
+            </publisher>
+            <doi_data>
+               <doi>10.7290/V7057CVC</doi>
+               <timestamp>2015715</timestamp>
+               <resource>http://www.lib.utk.edu/newfoundpress/pubs/travels/travels.html</resource>
             </doi_data>
          </book_metadata>
       </book>
@@ -175,8 +377,9 @@
                <publisher_place>Knoxville, Tenn.</publisher_place>
             </publisher>
             <doi_data>
-               <doi>10.5072/FK2</doi>
-               <resource>http://www.example.org/</resource>
+               <doi>10.7290/V7G44N61</doi>
+               <timestamp>2015715</timestamp>
+               <resource>http://www.newfoundpress.utk.edu/pubs/harmon/</resource>
             </doi_data>
          </book_metadata>
       </book>
@@ -201,8 +404,43 @@
                <publisher_place>Knoxville, Tenn.</publisher_place>
             </publisher>
             <doi_data>
-               <doi>10.5072/FK2</doi>
-               <resource>http://www.example.org/</resource>
+               <doi>10.7290/V76Q1V59</doi>
+               <timestamp>2015715</timestamp>
+               <resource>http://www.newfoundpress.utk.edu/pubs/byers/</resource>
+            </doi_data>
+         </book_metadata>
+      </book>
+      <book book_type="edited_book">
+         <book_metadata language="en">
+            <contributors>
+               <person_name sequence="first" contributor_role="author">
+                  <given_name>Hans Jakob Christoph von</given_name>
+                  <surname>Grimmelshausen</surname>
+               </person_name>
+               <person_name sequence="additional" contributor_role="author">
+                  <given_name>John C.</given_name>
+                  <surname>Osborne</surname>
+               </person_name>
+               <person_name sequence="additional" contributor_role="author">
+                  <given_name>Lynne</given_name>
+                  <surname>Tatlock</surname>
+               </person_name>
+            </contributors>
+            <titles>
+               <title>Simplicissimus : the German adventurer</title>
+            </titles>
+            <publication_date media_type="online">
+               <year>2008</year>
+            </publication_date>
+            <isbn media_type="electronic">097972922X</isbn>
+            <publisher>
+               <publisher_name>Newfound Press, University of Tennessee Libraries</publisher_name>
+               <publisher_place>Knoxville, Tenn.</publisher_place>
+            </publisher>
+            <doi_data>
+               <doi>10.7290/V7CC0XMP</doi>
+               <timestamp>2015715</timestamp>
+               <resource>http://www.newfoundpress.utk.edu/pubs/osborne</resource>
             </doi_data>
          </book_metadata>
       </book>
@@ -235,8 +473,47 @@
                <publisher_place>Knoxville, Tenn.</publisher_place>
             </publisher>
             <doi_data>
-               <doi>10.5072/FK2</doi>
-               <resource>http://www.example.org/</resource>
+               <doi>10.7290/V7QN64NR</doi>
+               <timestamp>2015715</timestamp>
+               <resource>http://www.newfoundpress.utk.edu/pubs/hiller/</resource>
+            </doi_data>
+         </book_metadata>
+      </book>
+      <book book_type="edited_book">
+         <book_metadata language="en">
+            <contributors>
+               <person_name sequence="first" contributor_role="author">
+                  <given_name>Lera</given_name>
+                  <surname>Knox</surname>
+               </person_name>
+               <person_name sequence="additional" contributor_role="author">
+                  <given_name>Joy</given_name>
+                  <surname>Petty</surname>
+               </person_name>
+               <person_name sequence="additional" contributor_role="author">
+                  <given_name>Margaret Knox</given_name>
+                  <surname>Morgan</surname>
+               </person_name>
+               <person_name sequence="additional" contributor_role="author">
+                  <given_name>Carol Knox</given_name>
+                  <surname>Ball</surname>
+               </person_name>
+            </contributors>
+            <titles>
+               <title>Goodness gracious, Miss Agnes : patchwork of country living</title>
+            </titles>
+            <publication_date media_type="online">
+               <year>2005</year>
+            </publication_date>
+            <isbn media_type="electronic">0979729203</isbn>
+            <publisher>
+               <publisher_name>Newfound Press, University of Tennessee Libraries</publisher_name>
+               <publisher_place>Knoxville, Tenn.</publisher_place>
+            </publisher>
+            <doi_data>
+               <doi>10.7290/V7154F05</doi>
+               <timestamp>2015715</timestamp>
+               <resource>http://www.lib.utk.edu/newfoundpress/pubs/knox/</resource>
             </doi_data>
          </book_metadata>
       </book>
