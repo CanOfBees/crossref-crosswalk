@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_batch xmlns="http://www.crossref.org/schema/4.3.6"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           version="4.3.6"
+           xsi:schemaLocation="http://www.crossref.org/schema/4.3.6 http://www.crossref.org/schemas/crossref4.3.6.xsd">
+   <head>
+      <doi_batch_id>2015-08-04-14-50-35413</doi_batch_id>
+      <timestamp>201584</timestamp>
+      <depositor>
+         <depositor_name>Bridger Dyson-Smith</depositor_name>
+         <email_address>bdysonsm@utk.edu</email_address>
+      </depositor>
+      <registrant>University of Tennessee</registrant>
+   </head>
+   <body>
+      <book book_type="edited_book">
+         <book_metadata language="English">
+            <contributors>
+               <person sequence="first" contributor="author">
+                  <given_name>Hans Jakob Christoph von</given_name>
+                  <surname>Grimmelshausen</surname>
+               </person>
+               <person sequence="additional" contributor="author">
+                  <given_name>John C.</given_name>
+                  <surname>Osborne</surname>
+               </person>
+               <person sequence="additional" contributor="author">
+                  <given_name>Lynne</given_name>
+                  <surname>Tatlock</surname>
+               </person>
+            </contributors>
+            <titles>
+               <title>Simplicissimus : the German adventurer</title>
+            </titles>
+            <publication_date media_type="online">
+               <year>2008</year>
+            </publication_date>
+            <isbn media_type="electronic">097972922X</isbn>
+            <publisher>
+               <publisher_name>Newfound Press, University of Tennessee Libraries</publisher_name>
+               <publisher_place>Knoxville, Tenn.</publisher_place>
+            </publisher>
+            <doi_data>
+               <doi>10.7290/V7CC0XMP</doi>
+               <timestamp>201584</timestamp>
+               <resource>http://www.newfoundpress.utk.edu/pubs/osborne</resource>
+            </doi_data>
+         </book_metadata>
+      </book>
+   </body>
+</doi_batch>

@@ -4,6 +4,7 @@
                 xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/"
                 xmlns:dc="http://purl.org/dc/elements/1.1/"
                 xmlns:doi_batch="http://www.crossref.org/schema/4.3.6"
+                xmlns:cob="http://cob.net/cob"
                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                 xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd http://www.crossref.org/schema/4.3.6 http://www.crossref.org/schemas/crossref4.3.6.xsd"
                 exclude-result-prefixes="#all" xpath-default-namespace="http://www.crossref.org/schema/4.3.6"
@@ -37,13 +38,9 @@
   <xsl:template name="getContributors">
     <contributors>
       <xsl:apply-templates select="oai_dc:dc/dc:creator[ends-with(.,'.') and not(contains(.,','))]" mode="orgMode"/>
-      <xsl:apply-templates select="oai_dc:dc/dc:creator[contains(.,';')]" mode="voltronPersonMode"/>
-      <xsl:apply-templates select="oai_dc:dc/dc:creator[not(ends-with(.,'.'))]" mode="personMode"/>
-      <xsl:apply-templates select="oai_dc:dc/dc:creator[ends-with(.,'.') and contains(.,',')]"
-                           mode="personMode"/>
-      <xsl:apply-templates select="oai_dc:dc/dc:creator[ends-with(.,'-')]" mode="personMode"/>
+      <xsl:apply-templates select="oai_dc:dc/dc:creator[contains(.,',')]" mode="personMode"/>
       <xsl:apply-templates select="oai_dc:dc/dc:contributor" mode="personMode"/>
-    </contributors>
+   </contributors>
   </xsl:template>
 
   <!-- get titles, like the name says -->
@@ -74,30 +71,25 @@
 
   <!-- (start) grab(bing) the ISBN number -->
   <xsl:template name="getISBN">
-    <xsl:apply-templates select="oai_dc:dc/dc:identifier[starts-with(.,'URN:ISBN')]"/>
-    <xsl:apply-templates select="oai_dc:dc/dc:identifier[starts-with(.,'ISBN')]"/>
+    <xsl:apply-templates select="oai_dc:dc/dc:identifier[contains(.,'ISBN')]"/>
   </xsl:template>
 
-  <!-- finish processing the ISBN number -->
-  <xsl:template match="oai_dc:dc/dc:identifier[starts-with(.,'URN:ISBN')]">
+  <!-- the following two templates handle the invalid ISBNs in Wonderous Bird's Nest II -->
+  <xsl:template match="oai_dc:dc/dc:identifier[contains(.,'ISBN') and following-sibling::dc:identifier[matches(.,'DOI:10.7290/V7KW5CX1')]][1]">
+    <noisbn reason="simple_series"/>
+  </xsl:template>
+  <xsl:template match="oai_dc:dc/dc:identifier[contains(.,'ISBN') and following-sibling::dc:identifier[matches(.,'DOI:10.7290/V7KW5CX1')]][2]"/>
+
+  <!-- handles all of the other ISBNs. hopefully. -->
+  <xsl:template match="oai_dc:dc/dc:identifier[contains(.,'ISBN') and not(following-sibling::dc:identifier[matches(.,'DOI:10.7290/V7KW5CX1')])]">
     <isbn media_type="electronic">
-      <xsl:analyze-string select="." regex="[0-9X]+">
+      <xsl:analyze-string select="." regex="(^.*:)\s{{0,1}}([0-9X]+)(.*$)">
         <xsl:matching-substring>
-          <xsl:value-of select="."/>
+          <xsl:value-of select="regex-group(2)"/>
         </xsl:matching-substring>
       </xsl:analyze-string>
     </isbn>
   </xsl:template>
-  <xsl:template match="oai_dc:dc/dc:identifier[starts-with(.,'ISBN')]">
-    <isbn media_type="electronic">
-      <xsl:analyze-string select="." regex="[0-9X]+">
-        <xsl:matching-substring>
-          <xsl:value-of select="."/>
-        </xsl:matching-substring>
-      </xsl:analyze-string>
-    </isbn>
-  </xsl:template>
-
 
   <!-- get or create publisher info -->
   <!-- i'd like to refactor this, make it a bit less choose/when/otherwise -->
@@ -143,97 +135,67 @@
   </xsl:template>
 
   <!-- modalities -->
+  <!-- process dc:creator for a potential organization name -->
   <xsl:template match="oai_dc:dc/dc:creator" mode="orgMode">
     <organization
         sequence="{if (position() &gt; 1) then 'additional' else 'first'}"
         contributor_role="author">
-      <xsl:value-of select="normalize-space(substring-before(.,'.'[last()]))"/>
+      <xsl:value-of select="if (ends-with(.,'.')) then
+                            normalize-space(substring-before(.,'.'[last()])) else
+                            normalize-space(.)"/>
     </organization>
   </xsl:template>
 
+  <!-- process dc:creator for a person's name -->
   <xsl:template match="oai_dc:dc/dc:creator" mode="personMode">
-    <person_name
-      sequence="{if (position() &gt; 1) then 'additional' else 'first'}"
-      contributor_role="author">
-      <given_name>
-        <!--
-          the $vPerson variable is for dealing with some of the dc:creator elements that have whitespace formatting;
-          the variable normalizes whitespace.
-        -->
-        <xsl:variable name="vPerson" select="normalize-space(.)"/>
-        <xsl:value-of
-            select="if (ends-with($vPerson,',')) then
-                    normalize-space(substring-before(substring-after($vPerson,','[position()=1]),','[last()]))
-                    else if (ends-with($vPerson,'.')) then
-                    normalize-space(substring-before(substring-after($vPerson,','[position()=1]),'.'[last()]))
-                    else if (ends-with($vPerson,'-')) then
-                    normalize-space(substring-before(substring-after($vPerson,','[position()=1]),','[last()]))
-                    else if (not(ends-with($vPerson,',')) and not(ends-with($vPerson,'.'))) then
-                    normalize-space(substring-after($vPerson,','[position()=1]))
-                    else ''"/>
-      </given_name>
-      <surname>
-        <xsl:value-of select="normalize-space(substring-before(.,','[position()=1]))"/>
-      </surname>
-    </person_name>
+    <xsl:choose>
+      <xsl:when test="contains(.,';')">
+        <xsl:for-each select="tokenize(.,';')">
+          <xsl:call-template name="getPerson"/>
+        </xsl:for-each>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:call-template name="getPerson"/>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
-  <xsl:template match="oai_dc:dc/dc:creator" mode="voltronPersonMode">
-    <xsl:for-each select="tokenize(.,';')">
-      <person_name
-          sequence="{if (position() &gt; 1) then 'additional' else 'first'}"
-          contributor_role="author">
-        <given_name>
-          <!--
-            the $vPerson variable is for dealing with some of the dc:creator elements that have whitespace formatting;
-            the variable normalizes whitespace.
-          -->
-          <xsl:variable name="vPerson" select="normalize-space(.)"/>
-          <xsl:value-of
-              select="if (ends-with($vPerson,',')) then
-                    normalize-space(substring-before(substring-after($vPerson,','[position()=1]),','[last()]))
-                    else if (ends-with($vPerson,'.')) then
-                    normalize-space(substring-before(substring-after($vPerson,','[position()=1]),'.'[last()]))
-                    else if (ends-with($vPerson,'1676')) then
-                    normalize-space(substring-before(substring-after($vPerson,','[position()=1]),','[last()]))
-                    else if (ends-with($vPerson,'-')) then
-                    normalize-space(substring-before(substring-after($vPerson,','[position()=1]),','[last()]))
-                    else if (not(ends-with($vPerson,',')) and not(ends-with($vPerson,'.'))) then
-                    normalize-space(substring-after($vPerson,','[position()=1]))
-                    else ''"/>
-        </given_name>
-        <surname>
-          <xsl:value-of select="normalize-space(substring-before(.,','[position()=1]))"/>
-        </surname>
-      </person_name>
-    </xsl:for-each>
-  </xsl:template>
-
+  <!--  process dc:contributor and make a lot of potentially bad decisions with it -->
   <xsl:template match="oai_dc:dc/dc:contributor" mode="personMode">
-    <person_name
-      sequence="{if (position() &gt; 1) then 'additional' else 'first'}"
-      contributor_role="author">
-      <given_name>
-        <!--
-          the $vPerson variable is for dealing with some of the dc:contributor elements that have whitespace formatting;
-          the variable normalizes whitespace.
-        -->
-        <xsl:variable name="vPerson" select="normalize-space(.)"/>
-        <xsl:value-of
-            select="if (ends-with($vPerson,',')) then
-                    normalize-space(substring-before(substring-after($vPerson,','[position()=1]),','[last()]))
-                    else if (ends-with($vPerson,'.')) then
-                    normalize-space(substring-before(substring-after($vPerson,','[position()=1]),'.'[last()]))
-                    else if (ends-with($vPerson,'-')) then
-                    normalize-space(substring-before(substring-after($vPerson,','[position()=1]),','[last()]))
-                    else if (not(ends-with($vPerson,',')) and not(ends-with($vPerson,'.'))) then
-                    normalize-space(substring-after($vPerson,','[position()=1]))
-                    else ''"/>
-      </given_name>
+    <person sequence="additional" contributor="author">
+      <given_name><xsl:sequence select="normalize-space(cob:nameProc(.))"/></given_name>
       <surname>
-        <xsl:value-of select="normalize-space(substring-before(.,','[position()=1]))"/>
+        <xsl:sequence select="if (contains(.,':')) then
+                              normalize-space(substring-after(substring-before(.,','[position()=1]),':'))
+                              else normalize-space(substring-before(.,','[position()=1]))"/>
       </surname>
-    </person_name>
+    </person>
   </xsl:template>
 
+  <!-- process names -->
+  <!-- generates the main part of the <contributor> element for CrossRef -->
+  <xsl:template name="getPerson">
+    <person sequence="{if (position() &gt; 1) then 'additional' else 'first'}"
+            contributor="author">
+      <given_name><xsl:sequence select="normalize-space(cob:nameProc(.))"/></given_name>
+      <surname><xsl:sequence select="normalize-space(substring-before(.,','[position()=1]))"/></surname>
+    </person>
+  </xsl:template>
+
+  <!-- functions -->
+  <!-- processes the pieces of dc:(creator|contributor) and hopefully returns good info -->
+  <xsl:function name="cob:nameProc">
+    <xsl:param name="pInput"/>
+    <xsl:sequence select="if (ends-with($pInput,',')) then
+            normalize-space(substring-before(substring-after($pInput,','[position() = 1]),','[last()]))
+            else if (ends-with($pInput,'.')) then
+            normalize-space(substring-before(substring-after($pInput,','[position() = 1]),'.'[last()]))
+            else if (ends-with($pInput,'1676 ')) then
+            normalize-space(substring-before(substring-after($pInput,','[position()=1]),','[last()]))
+            else if (ends-with($pInput,'-')) then
+            normalize-space(substring-before(substring-after($pInput,','[position() = 1]),','[last()]))
+            else if (not(ends-with($pInput,',')) and not(ends-with($pInput,'.'))) then
+            normalize-space(substring-after($pInput,','[position()=1]))
+            else normalize-space($pInput)"/>
+  </xsl:function>
 </xsl:stylesheet>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_batch xmlns="http://www.crossref.org/schema/4.3.6"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           version="4.3.6"
+           xsi:schemaLocation="http://www.crossref.org/schema/4.3.6 http://www.crossref.org/schemas/crossref4.3.6.xsd">
+   <head>
+      <doi_batch_id>2015-08-04-14-50-35413</doi_batch_id>
+      <timestamp>201584</timestamp>
+      <depositor>
+         <depositor_name>Bridger Dyson-Smith</depositor_name>
+         <email_address>bdysonsm@utk.edu</email_address>
+      </depositor>
+      <registrant>University of Tennessee</registrant>
+   </head>
+   <body>
+      <book book_type="edited_book">
+         <book_metadata language="en">
+            <contributors>
+               <organization sequence="first" contributor_role="author">Southern Anthropological Society</organization>
+               <person sequence="first" contributor="author">
+                  <given_name>Robert</given_name>
+                  <surname>Shanafelt</surname>
+               </person>
+            </contributors>
+            <titles>
+               <title>Building bridges in anthropology [electronic resource] : understanding, acting, teaching, and theorizing</title>
+            </titles>
+            <publication_date media_type="online">
+               <year>2012</year>
+            </publication_date>
+            <isbn media_type="electronic">0984644539</isbn>
+            <isbn media_type="electronic">9780984644537</isbn>
+            <publisher>
+               <publisher_name>Newfound Press, University of Tennessee Libraries,</publisher_name>
+               <publisher_place>Knoxville, Tenn.</publisher_place>
+            </publisher>
+            <doi_data>
+               <doi>10.7290/V7RN35S4</doi>
+               <timestamp>201584</timestamp>
+               <resource>http://www.newfoundpress.utk.edu/pubs/bridges/</resource>
+            </doi_data>
+         </book_metadata>
+      </book>
+   </body>
+</doi_batch>
