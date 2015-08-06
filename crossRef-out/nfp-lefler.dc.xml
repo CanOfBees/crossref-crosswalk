@@ -4,8 +4,8 @@
            version="4.3.6"
            xsi:schemaLocation="http://www.crossref.org/schema/4.3.6 http://www.crossref.org/schemas/crossref4.3.6.xsd">
    <head>
-      <doi_batch_id>2015-08-04-14-50-35413</doi_batch_id>
-      <timestamp>201584</timestamp>
+      <doi_batch_id>2015-08-06-11-18-41098</doi_batch_id>
+      <timestamp>201586</timestamp>
       <depositor>
          <depositor_name>Bridger Dyson-Smith</depositor_name>
          <email_address>bdysonsm@utk.edu</email_address>
@@ -17,10 +17,10 @@
          <book_metadata language="en">
             <contributors>
                <organization sequence="first" contributor_role="author">Southern Anthropological Society</organization>
-               <person sequence="first" contributor="author">
+               <person_name sequence="first" contributor_role="author">
                   <given_name>Lisa J</given_name>
                   <surname>Lefler</surname>
-               </person>
+               </person_name>
             </contributors>
             <titles>
                <title>Southern foodways and culture [electronic resource] : local considerations and beyond</title>
@@ -36,7 +36,7 @@
             </publisher>
             <doi_data>
                <doi>10.7290/V7WD3XHG</doi>
-               <timestamp>201584</timestamp>
+               <timestamp>201586</timestamp>
                <resource>http://www.newfoundpress.utk.edu/pubs/foodways</resource>
             </doi_data>
          </book_metadata>

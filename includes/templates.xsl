@@ -162,24 +162,24 @@
 
   <!--  process dc:contributor and make a lot of potentially bad decisions with it -->
   <xsl:template match="oai_dc:dc/dc:contributor" mode="personMode">
-    <person sequence="additional" contributor="author">
+    <person_name sequence="additional" contributor_role="{if (contains(.,'Edit')) then 'editor' else 'author'}">
       <given_name><xsl:sequence select="normalize-space(cob:nameProc(.))"/></given_name>
       <surname>
         <xsl:sequence select="if (contains(.,':')) then
                               normalize-space(substring-after(substring-before(.,','[position()=1]),':'))
                               else normalize-space(substring-before(.,','[position()=1]))"/>
       </surname>
-    </person>
+    </person_name>
   </xsl:template>
 
   <!-- process names -->
   <!-- generates the main part of the <contributor> element for CrossRef -->
   <xsl:template name="getPerson">
-    <person sequence="{if (position() &gt; 1) then 'additional' else 'first'}"
-            contributor="author">
+    <person_name sequence="{if (position() &gt; 1) then 'additional' else 'first'}"
+            contributor_role="author">
       <given_name><xsl:sequence select="normalize-space(cob:nameProc(.))"/></given_name>
       <surname><xsl:sequence select="normalize-space(substring-before(.,','[position()=1]))"/></surname>
-    </person>
+    </person_name>
   </xsl:template>
 
   <!-- functions -->

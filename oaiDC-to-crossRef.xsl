@@ -58,7 +58,10 @@
             <body>
               <book book_type="edited_book">
                 <book_metadata
-                  language="{if (oai_dc:dc/dc:language eq 'eng') then 'en' else oai_dc:dc/dc:language}">
+                  language="{if (oai_dc:dc/dc:language eq 'eng') then 'en'
+                            else if (oai_dc:dc/dc:language eq 'English') then 'en'
+                            else if (oai_dc:dc/dc:language eq 'english') then 'en'
+                            else 'en'}">
                   <xsl:call-template name="getContributors"/>
                   <xsl:call-template name="getTitles"/>
                   <xsl:call-template name="getPublicationDate"/>

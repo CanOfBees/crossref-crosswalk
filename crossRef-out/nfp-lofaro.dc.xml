@@ -4,8 +4,8 @@
            version="4.3.6"
            xsi:schemaLocation="http://www.crossref.org/schema/4.3.6 http://www.crossref.org/schemas/crossref4.3.6.xsd">
    <head>
-      <doi_batch_id>2015-08-04-14-50-35413</doi_batch_id>
-      <timestamp>201584</timestamp>
+      <doi_batch_id>2015-08-06-11-18-41098</doi_batch_id>
+      <timestamp>201586</timestamp>
       <depositor>
          <depositor_name>Bridger Dyson-Smith</depositor_name>
          <email_address>bdysonsm@utk.edu</email_address>
@@ -16,22 +16,22 @@
       <book book_type="edited_book">
          <book_metadata language="en">
             <contributors>
-               <person sequence="first" contributor="author">
+               <person_name sequence="first" contributor_role="author">
                   <given_name>Michael A., 1948-</given_name>
                   <surname>Lofaro</surname>
-               </person>
-               <person sequence="additional" contributor="author">
+               </person_name>
+               <person_name sequence="additional" contributor_role="author">
                   <given_name>Richard Beale.</given_name>
                   <surname>Davis</surname>
-               </person>
-               <person sequence="additional" contributor="author">
+               </person_name>
+               <person_name sequence="additional" contributor_role="author">
                   <given_name>George M.</given_name>
                   <surname>Barringer</surname>
-               </person>
-               <person sequence="additional" contributor="author">
+               </person_name>
+               <person_name sequence="additional" contributor_role="author">
                   <given_name>Sandra G.</given_name>
                   <surname>Hancock</surname>
-               </person>
+               </person_name>
             </contributors>
             <titles>
                <title>Southern manuscript sermons before 1800 [electronic resource] : a bibliography</title>
@@ -47,7 +47,7 @@
             </publisher>
             <doi_data>
                <doi>10.7290/V77P8W94</doi>
-               <timestamp>201584</timestamp>
+               <timestamp>201586</timestamp>
                <resource>http://www.lib.utk.edu/newfoundpress/pubs/lofaro/</resource>
             </doi_data>
          </book_metadata>

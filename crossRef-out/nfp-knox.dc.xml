@@ -4,8 +4,8 @@
            version="4.3.6"
            xsi:schemaLocation="http://www.crossref.org/schema/4.3.6 http://www.crossref.org/schemas/crossref4.3.6.xsd">
    <head>
-      <doi_batch_id>2015-08-04-14-50-35413</doi_batch_id>
-      <timestamp>201584</timestamp>
+      <doi_batch_id>2015-08-06-11-18-41098</doi_batch_id>
+      <timestamp>201586</timestamp>
       <depositor>
          <depositor_name>Bridger Dyson-Smith</depositor_name>
          <email_address>bdysonsm@utk.edu</email_address>
@@ -14,24 +14,24 @@
    </head>
    <body>
       <book book_type="edited_book">
-         <book_metadata language="English">
+         <book_metadata language="en">
             <contributors>
-               <person sequence="first" contributor="author">
+               <person_name sequence="first" contributor_role="author">
                   <given_name>Lera</given_name>
                   <surname>Knox</surname>
-               </person>
-               <person sequence="additional" contributor="author">
+               </person_name>
+               <person_name sequence="additional" contributor_role="author">
                   <given_name>Joy</given_name>
                   <surname>Petty</surname>
-               </person>
-               <person sequence="additional" contributor="author">
+               </person_name>
+               <person_name sequence="additional" contributor_role="author">
                   <given_name>Margaret Knox</given_name>
                   <surname>Morgan</surname>
-               </person>
-               <person sequence="additional" contributor="author">
+               </person_name>
+               <person_name sequence="additional" contributor_role="author">
                   <given_name>Carol Knox</given_name>
                   <surname>Ball</surname>
-               </person>
+               </person_name>
             </contributors>
             <titles>
                <title>Goodness gracious, Miss Agnes : patchwork of country living</title>
@@ -46,7 +46,7 @@
             </publisher>
             <doi_data>
                <doi>10.7290/V7154F05</doi>
-               <timestamp>201584</timestamp>
+               <timestamp>201586</timestamp>
                <resource>http://www.lib.utk.edu/newfoundpress/pubs/knox/</resource>
             </doi_data>
          </book_metadata>

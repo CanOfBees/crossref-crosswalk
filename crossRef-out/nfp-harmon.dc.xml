@@ -4,8 +4,8 @@
            version="4.3.6"
            xsi:schemaLocation="http://www.crossref.org/schema/4.3.6 http://www.crossref.org/schemas/crossref4.3.6.xsd">
    <head>
-      <doi_batch_id>2015-08-04-14-50-35413</doi_batch_id>
-      <timestamp>201584</timestamp>
+      <doi_batch_id>2015-08-06-11-18-41098</doi_batch_id>
+      <timestamp>201586</timestamp>
       <depositor>
          <depositor_name>Bridger Dyson-Smith</depositor_name>
          <email_address>bdysonsm@utk.edu</email_address>
@@ -16,10 +16,10 @@
       <book book_type="edited_book">
          <book_metadata language="en">
             <contributors>
-               <person sequence="first" contributor="author">
+               <person_name sequence="first" contributor_role="author">
                   <given_name>Mark D</given_name>
                   <surname>Harmon</surname>
-               </person>
+               </person_name>
             </contributors>
             <titles>
                <title>Found, featured, then forgotten [electronic resource] : U.S. network tv news and the Vietnam Veterans Against the War</title>
@@ -35,7 +35,7 @@
             </publisher>
             <doi_data>
                <doi>10.7290/V7G44N61</doi>
-               <timestamp>201584</timestamp>
+               <timestamp>201586</timestamp>
                <resource>http://www.newfoundpress.utk.edu/pubs/harmon/</resource>
             </doi_data>
          </book_metadata>
